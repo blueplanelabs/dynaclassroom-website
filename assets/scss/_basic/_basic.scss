@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------
+// ESSENTIAL CONTROLLER
+// -----------------------------------------------------------------------
+@import "layout";
+@import "typography";
+@import "ui";
+body{
+	&.openLB{
+		overflow: hidden;
+	}
+	h3 + p{
+		margin-left: auto;
+		margin-right: auto;
+		@include respond-to-device(xmd, false) {
+			max-width: 70vw;
+		}
+	}
+	section{content-visibility: auto}
+}
+
+.visible{
+	transition: all 1.5s ease-in-out;
+	opacity: 1;
+}
+.oculto{
+	transition: all .5s ease-in-out;
+	opacity: 0;
+
+}

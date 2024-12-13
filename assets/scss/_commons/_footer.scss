@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------
+// MAIN FOOTER STYLE
+// -----------------------------------------------------------------------
+
+.footer {
+	text-align: center;
+	color: $_colorBlanco;
+	background: $_colorCorporativo1-dark;
+	.content {	
+		nav {
+			li {
+				margin-left: $_margin;
+				display: inline-block;
+				a{color: $_colorBlanco;}
+			}
+		}
+	}
+
+	@include respond-to-device(xsm, false) { 
+		text-align: left; 
+		.content nav { float: right; }
+	}
+}
