@@ -11,26 +11,6 @@
 
 // - 00 + CLEARFIX
 
-%ph-clearfix {
-    &::before,
-    &::after {
-        content: "";
-        display: table;
-    }
-    &::after {
-        clear: both;
-    }
-}
-
-%ph-negative { 
-	background: $_colorBase; 
-	color:$_colorBlanco;
-	* { color:$_colorText;}
-	a:link, a:visited, a:hover, a:active {
-		color:$_colorCorporativo3;	text-decoration: underline;
-	}
-}
-
 %ph-sr-only {
   position: absolute;
   width: 1px;

@@ -16,13 +16,13 @@
 </head>
 <body>
 
-<div id="fbody" class="Home">
+<div id="fbody" class="">
     <!-- ==== container ==== -->
     <div class="container">
     <!-- ==== header ==== -->
     <header class="header">
         <div class="content">
-    	    <h1 class="logo"><a href="index.html"><img src="assets/img/dyna-logo.svg" alt="Logo Dyna Classroom" loading="lazy"></a></h1>
+    	    <h1 class="logo"><a href="index.html"><picture><source srcset="assets/img/dyna-logo-small.svg" media="(max-width: 960px)"><img src="assets/img/dyna-logo.svg" alt="Logo Dyna Classroom"></picture></a></h1>
             <button class="menu">
                 <span>Menú</span>
                 <div class="hamburger">
@@ -48,11 +48,32 @@
 	</header>        
     <!-- ==== End header ==== -->
     <!-- ==== content ==== -->
-    	<main>
+    	<main class="contacto-page">
             <section>
                 <div class="content">
-                    <h2>Contacto</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsum illo hic, expedita sequi odio at, ex animi harum suscipit soluta in est magni iste necessitatibus amet eum optio minima.</p>
+                    <div class="form-panel">
+                        <h2>¿Hablamos?</h2>
+                        <div class="form-control">
+                            <label for="">Nombre:</label>
+                            <input type="text" placeholder="">
+                        </div>
+                        <div class="form-control">
+                            <label for="">Mail:</label>
+                            <input type="email" placeholder="@">
+                        </div>
+                        <div class="form-control">
+                            <label for="">Teléfono:</label>
+                            <input type="tel" placeholder="">
+                        </div>
+                        <div class="form-control">
+                            <label for="">Mensaje:</label>
+                            <textarea name="" id=""></textarea>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="btn">Enviar</a>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
             <a href="#fbody" class="top" title="subir" ><span>Top</span></a>

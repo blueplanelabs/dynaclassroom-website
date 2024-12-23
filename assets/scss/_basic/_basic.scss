@@ -8,14 +8,15 @@ body{
 	&.openLB{
 		overflow: hidden;
 	}
-	h3 + p{
-		margin-left: auto;
-		margin-right: auto;
-		@include respond-to-device(xmd, false) {
-			max-width: 70vw;
+	section{
+		content-visibility: auto;
+		&:first-child{
+			margin-top: 45px;
+			@include respond-to-device(slg, false) {
+				margin-top: 100px;
+			}
 		}
 	}
-	section{content-visibility: auto}
 }
 
 .visible{

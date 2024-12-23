@@ -14,6 +14,7 @@ $(document).ready(function () {
         $menu.toggleClass("toggle");
         $navigations.toggleClass("toggle");
         $header.toggleClass("toggle");
+        $body.toggleClass("toggle");
     }
 
     // Al hacer clic en el menú

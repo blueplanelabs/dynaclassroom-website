@@ -30,11 +30,16 @@
 		flex: 1;
 		display: inline-block;
 		text-align: left;
-		padding-left: max(2vw, $_padding);
+		@include respond-to-device(slg, false) {
+			padding-left: max(2vw, $_padding);
+		}
 		a{display: flex;}
 		img { 
-			height: 1.5em;
-			margin: .3em 0;
+			height: 1em;
+			@include respond-to-device(slg, false) {
+				height: 1.5em;
+				margin: .3em 0;
+			}
 		}
 	}
 
@@ -43,17 +48,17 @@
 	.navigations {
 		text-align: left;
 		@include respond-to-device(false, slg ) { 
-			visibility: hidden; 
-			width: 0;
-			top: 48px;
+			background-color: $_colorCorporativo4-light;
+			width: 100svw;
+			left: 100svw;
+			top: 63px;
 			position: fixed;
+			bottom: 0;
+			transition: 0.5s ease-in-out all;
 			&.toggle {
-				background-color: $_colorCorporativo4-light;
-				visibility: visible;
 			    height: calc(100vh - 50px);
-			    bottom: 0;
-			    width: 210px;
-			    top: 48px;
+			    left: 0;
+			    top: 63px;
 			    padding: $_padding/2 $_padding;
 			    right: 0;
 			    display: flex;

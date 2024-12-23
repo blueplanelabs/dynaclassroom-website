@@ -6,7 +6,7 @@
     text-align: center;
     margin: $_margin 0;
 }
-.btn{
+.btn, a.btn{
     color: $_colorBlanco;
     background-color: $_colorCorporativo3;
     cursor: pointer;
@@ -92,3 +92,10 @@
     }
 }
 .js-open-lightbox{cursor: pointer;}
+
+.animate-element{
+    top: 2em;
+    &.visible{
+        top: 0;
+    }
+}
