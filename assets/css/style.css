@@ -853,6 +853,16 @@ body section:first-child {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 0.2em;
 }
+.Home .galery > div .no-sign {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  background-image: url(../img/no-sign.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 2em;
+  height: 2em;
+}
 .Home .index-section-01 {
   background-color: #FFE198;
 }

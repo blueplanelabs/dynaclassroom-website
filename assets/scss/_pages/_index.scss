@@ -135,6 +135,17 @@
                 background-color: rgba($_colorBlanco,  .8);
                 border-radius: .2em;
             }
+            .no-sign{
+                position: absolute;
+                right: 1em;
+                bottom: 1em;
+                background-image: url(../img/no-sign.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 2em;
+                height: 2em;
+            }
+            
         }
     }
     .index-section-01{
