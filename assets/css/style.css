@@ -888,6 +888,11 @@ body section:first-child {
   color: #4E4747;
 }
 
+.super {
+  vertical-align: super;
+  font-size: 0.9em;
+}
+
 .faqs-index {
   background: #FFE198;
 }
