@@ -76,13 +76,14 @@
             color: $_colorCorporativo3;
         }
     }
-    .galery{
+    .gallery{
         display: grid;
         @include respond-to-device(slg, false) {
             grid-template-columns: repeat(4, 1fr);
         }
         gap: $_padding;
         grid-auto-flow: dense;
+        p:not(.caption){font-size: 1.4em;}
         > div{
             position: relative;
             &.column-text-der{
