@@ -20,4 +20,26 @@
 		text-align: left; 
 		.content nav { float: right; }
 	}
+	.project{
+		color: $_colorText;
+		padding: $_padding;
+		background-color: #FFDB00;
+		display: grid;
+		@include respond-to-device(slg, false) { 
+			grid-template-columns: 1fr auto;
+		}
+		align-items: center;
+		gap: $_padding;
+		font-size: clamp(14px, 0.8em, 1em);;
+		p{
+			margin: 0;
+		}
+		img{
+			width: 100%;
+			@include respond-to-device(xsm, false) { 
+				max-width: 350px;
+			}
+			height: auto;
+		}
+	}
 }
