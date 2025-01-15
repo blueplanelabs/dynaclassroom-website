@@ -39,6 +39,7 @@
                     text-align: center;
                     color: $_colorNeutro;
                     filter: drop-shadow(.02em .02em .02em #222);
+                    padding: 0 1em;
                 }
             }
         }
@@ -60,8 +61,8 @@
             position: fixed; 
             top: 0; 
             left: 0; 
-            width: 100svw; 
-            aspect-ratio: 16 / 9;
+            height: 100%; 
+            // aspect-ratio: 16 / 9;
             z-index: 0;
         }
         .down-element{

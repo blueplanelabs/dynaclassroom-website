@@ -757,6 +757,7 @@ body section:first-child {
   text-align: center;
   color: #EDECEC;
   filter: drop-shadow(0.02em 0.02em 0.02em #222);
+  padding: 0 1em;
 }
 .Home .welcome .banner-video {
   display: grid;
@@ -776,8 +777,7 @@ body section:first-child {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100svw;
-  aspect-ratio: 16/9;
+  height: 100%;
   z-index: 0;
 }
 .Home .welcome .down-element {
