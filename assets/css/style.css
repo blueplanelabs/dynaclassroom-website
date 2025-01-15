@@ -793,7 +793,7 @@ body section:first-child {
   content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(57, 184, 193, 0.5), rgba(239, 119, 90, 0.5));
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
   left: 0;
