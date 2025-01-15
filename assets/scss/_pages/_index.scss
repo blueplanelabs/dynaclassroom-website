@@ -148,6 +148,7 @@
             }
             .caption{
                 position: absolute;
+                z-index: 2;
                 left: 1em;
                 top: 2em;
                 transform: rotate(-4deg);
@@ -165,8 +166,9 @@
                 background-image: url(../img/no-sign.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
-                width: 2em;
-                height: 2em;
+                width: 80%;
+                height: 50%;
+                z-index: 1;
             }
             
         }
