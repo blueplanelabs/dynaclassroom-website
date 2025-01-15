@@ -1,0 +1,49 @@
+.contacto-page{
+    background-image: url(../img/fondo-03.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 90svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    section{
+        width: 100vw;
+    }
+    .form-panel{
+        max-width: 38em;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: $_padding;
+        border-radius: $_padding;
+        background-color: rgba($_colorBlanco, .9);
+        border: 10px solid $_colorCorporativo1;
+        box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.15);
+    }
+    .form-control{
+        label{
+            margin-top: .8em;
+            margin-bottom: .3em;
+            display: block;
+        }
+        input, textarea{
+            display: block;
+            border: 1px solid $_colorCorporativo1;
+            padding: 0 $_padding;
+            line-height: 2em;
+            border-radius: 1em;
+            font-size: 1em;
+            width: 100%;
+            background-color: $_colorBlanco;
+        }
+        textarea{
+            height: 8em;
+        }
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}

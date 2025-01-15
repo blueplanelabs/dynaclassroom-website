@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------
+// ESSENTIAL CONTROLLER
+// -----------------------------------------------------------------------
+@import "layout";
+@import "typography";
+@import "ui";
+body{
+	&.openLB{
+		overflow: hidden;
+	}
+	section{
+		content-visibility: auto;
+		&:first-child{
+			margin-top: 45px;
+			@include respond-to-device(slg, false) {
+				margin-top: 100px;
+			}
+		}
+	}
+}
+
+.visible{
+	transition: all 1.5s ease-in-out;
+	opacity: 1;
+}
+.oculto{
+	transition: all .5s ease-in-out;
+	opacity: 0;
+
+}

@@ -1,0 +1,33 @@
+html {font-size: max(1.125rem,1.25vw);}
+body {
+	font-family:'Roboto', sans-serif;
+	color: $_colorText;
+	background-color: $_colorNegro;
+	line-height: 1.45;
+}
+h1, h2, h3, h4 { 
+	font-family:'Exo', sans-serif; 
+	font-weight: bold; 
+	letter-spacing: -0.2px;
+}
+h2,
+.h2{
+	font-size: max(2.5rem,4vw);
+}
+h3,
+.h3{
+	font-size: max(2.2rem,3vw);
+}
+h4,
+.h4{
+	font-size: max(1.8rem,1.8vw);
+}
+.t-l2 {
+	margin-bottom: $_margin;
+	@include respond-to-device(xsm, false) {margin-bottom: $_margin*2;}
+}
+.t-l3 {
+	margin-bottom: $_margin/2;
+	@include respond-to-device(xsm, false) {margin-bottom: $_margin;}
+}
+p { margin-bottom: $_margin; }
