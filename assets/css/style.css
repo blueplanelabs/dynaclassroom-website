@@ -926,6 +926,11 @@ body section:first-child {
   height: 50%;
   z-index: 1;
 }
+.Home video.section {
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
 .Home .index-section-01 {
   background-color: #FFE198;
 }
