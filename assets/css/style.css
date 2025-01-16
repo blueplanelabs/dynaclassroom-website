@@ -439,8 +439,7 @@ main > * {
   text-align: left;
 }
 .Page main .content .paper-content h2:not(:first-child) {
-  padding-top: max(7vw, 1em);
-  margin-top: 4vw;
+  margin-top: 1vw;
 }
 .Page main .content .ol-topics {
   padding-left: 1em;
