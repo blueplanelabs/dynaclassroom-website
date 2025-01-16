@@ -8,7 +8,10 @@
         background-attachment: fixed;
         background-size: cover;
         font-size: 1.5em;
-        aspect-ratio: 16 / 9;
+        aspect-ratio: 9 / 16;
+        @include respond-to-device(slg, false) {
+            aspect-ratio: 16 / 9;
+        }
         .btn-circle{
             background: rgba($_colorBlanco, .9);
             border-radius: 100%;
