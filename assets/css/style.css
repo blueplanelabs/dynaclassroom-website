@@ -1139,3 +1139,6 @@ body section:first-child {
   left: 0;
   z-index: 20;
 }
+.hidden {
+  display: none;
+}
