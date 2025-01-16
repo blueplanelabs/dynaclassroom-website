@@ -628,6 +628,10 @@ body section:first-child {
   opacity: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 .buttons-cta {
   text-align: center;
   margin: 1em 0;
@@ -636,6 +640,7 @@ body section:first-child {
 .btn, a.btn {
   color: #fff;
   background-color: #E84678;
+  font-size: 1em;
   cursor: pointer;
   padding: 0.5em 1em;
   border-radius: 1em;
@@ -747,7 +752,12 @@ body section:first-child {
   background-attachment: fixed;
   background-size: cover;
   font-size: 1.5em;
-  aspect-ratio: 16/9;
+  aspect-ratio: 9/16;
+}
+@media screen and (min-width: 960px) {
+  .Home .welcome {
+    aspect-ratio: 16/9;
+  }
 }
 .Home .welcome .btn-circle {
   background: rgba(255, 255, 255, 0.9);
@@ -793,7 +803,7 @@ body section:first-child {
   content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(57, 184, 193, 0.5), rgba(239, 119, 90, 0.5));
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
   left: 0;
@@ -894,6 +904,7 @@ body section:first-child {
 }
 .Home .gallery > div .caption {
   position: absolute;
+  z-index: 2;
   left: 1em;
   top: 2em;
   transform: rotate(-4deg);
@@ -911,8 +922,9 @@ body section:first-child {
   background-image: url(../img/no-sign.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 2em;
-  height: 2em;
+  width: 80%;
+  height: 50%;
+  z-index: 1;
 }
 .Home .index-section-01 {
   background-color: #FFE198;
@@ -1002,7 +1014,7 @@ body section:first-child {
   margin-bottom: 0.3em;
   display: block;
 }
-.contacto-page .form-control input, .contacto-page .form-control textarea {
+.contacto-page .form-control input, .contacto-page .form-control textarea, .contacto-page .form-control .form-select {
   display: block;
   border: 1px solid #39B8C1;
   padding: 0 1em;
@@ -1014,6 +1026,10 @@ body section:first-child {
 }
 .contacto-page .form-control textarea {
   height: 8em;
+}
+.contacto-page .form-control select {
+  font-size: 1em;
+  width: 100%;
 }
 .contacto-page .buttons {
   display: flex;
