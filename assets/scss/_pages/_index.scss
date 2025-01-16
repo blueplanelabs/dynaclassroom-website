@@ -50,7 +50,8 @@
                 content: "";
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(rgba($_colorCorporativo1, 0.5), rgba($_colorCorporativo2, 0.5));
+                // background: linear-gradient(rgba($_colorCorporativo1, 0.5), rgba($_colorCorporativo2, 0.5));
+                background-color: rgba($color: #000000, $alpha: 0.5);
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -85,6 +86,12 @@
     }
     .main-info{
         padding: 0;
+        padding-top: 63px;
+        margin-top: -63px;
+        @include respond-to-device(slg, false) {
+            padding-top: 100px;
+            margin-top: -100px;
+        }
         > div{
             text-align: center;
             font-size: 2em;
@@ -141,6 +148,7 @@
             }
             .caption{
                 position: absolute;
+                z-index: 2;
                 left: 1em;
                 top: 2em;
                 transform: rotate(-4deg);
@@ -158,8 +166,9 @@
                 background-image: url(../img/no-sign.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
-                width: 2em;
-                height: 2em;
+                width: 80%;
+                height: 50%;
+                z-index: 1;
             }
             
         }

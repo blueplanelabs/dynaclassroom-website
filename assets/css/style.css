@@ -380,6 +380,32 @@ img {
     float: right;
   }
 }
+.footer .project {
+  color: #4E4747;
+  padding: 1em;
+  background-color: #FFDB00;
+  display: grid;
+  align-items: center;
+  gap: 1em;
+  font-size: clamp(14px, 0.8em, 1em);
+}
+@media screen and (min-width: 960px) {
+  .footer .project {
+    grid-template-columns: 1fr auto;
+  }
+}
+.footer .project p {
+  margin: 0;
+}
+.footer .project img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 640px) {
+  .footer .project img {
+    max-width: 350px;
+  }
+}
 
 main {
   background-color: #fff;
@@ -767,7 +793,7 @@ body section:first-child {
   content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(57, 184, 193, 0.5), rgba(239, 119, 90, 0.5));
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
   left: 0;
@@ -804,6 +830,14 @@ body section:first-child {
 }
 .Home .main-info {
   padding: 0;
+  padding-top: 63px;
+  margin-top: -63px;
+}
+@media screen and (min-width: 960px) {
+  .Home .main-info {
+    padding-top: 100px;
+    margin-top: -100px;
+  }
 }
 .Home .main-info > div {
   text-align: center;
@@ -860,6 +894,7 @@ body section:first-child {
 }
 .Home .gallery > div .caption {
   position: absolute;
+  z-index: 2;
   left: 1em;
   top: 2em;
   transform: rotate(-4deg);
@@ -877,8 +912,9 @@ body section:first-child {
   background-image: url(../img/no-sign.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 2em;
-  height: 2em;
+  width: 80%;
+  height: 50%;
+  z-index: 1;
 }
 .Home .index-section-01 {
   background-color: #FFE198;
