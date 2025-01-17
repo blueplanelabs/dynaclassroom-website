@@ -807,14 +807,15 @@ body section:first-child {
   top: 0;
   left: 0;
 }
-.Home .welcome iframe,
-.Home .welcome video {
-  position: fixed;
-  top: 0;
-  left: 0;
+.Home .welcome iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   z-index: 0;
-  width: 100%;
+  width: 5000%;
   height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
 }
 .Home .welcome .down-element {
   position: sticky;

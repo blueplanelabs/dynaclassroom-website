@@ -53,22 +53,21 @@
                 content: "";
                 width: 100%;
                 height: 100%;
-                // background: linear-gradient(rgba($_colorCorporativo1, 0.5), rgba($_colorCorporativo2, 0.5));
                 background-color: rgba($color: #000000, $alpha: 0.5);
                 position: absolute;
                 top: 0;
                 left: 0;
             }
         }
-        iframe,
-        video{
-            position: fixed; 
-            top: 0; 
-            left: 0;
-            // aspect-ratio: 16 / 9;
+        iframe{
+            position: absolute; 
+            top: 50%; 
+            left: 50%;
             z-index: 0;
-            width: 100%;
+            width: 5000%;
             height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
         }
         .down-element{
             position:sticky;
