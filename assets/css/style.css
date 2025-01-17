@@ -751,12 +751,6 @@ body section:first-child {
   background-attachment: fixed;
   background-size: cover;
   font-size: 1.5em;
-  aspect-ratio: 9/16;
-}
-@media screen and (min-width: 960px) {
-  .Home .welcome {
-    aspect-ratio: 16/9;
-  }
 }
 .Home .welcome .btn-circle {
   background: rgba(255, 255, 255, 0.9);
@@ -807,8 +801,7 @@ body section:first-child {
   top: 0;
   left: 0;
 }
-.Home .welcome iframe,
-.Home .welcome video {
+.Home .welcome iframe {
   position: fixed;
   top: 0;
   left: 0;
