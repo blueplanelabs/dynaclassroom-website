@@ -28,7 +28,7 @@
             margin-bottom: .3em;
             display: block;
         }
-        input, textarea{
+        input, textarea, .form-select{
             display: block;
             border: 1px solid $_colorCorporativo1;
             padding: 0 $_padding;
@@ -40,6 +40,10 @@
         }
         textarea{
             height: 8em;
+        }
+        select{
+            font-size: 1em;
+            width: 100%;
         }
     }
     .buttons{

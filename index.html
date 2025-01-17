@@ -12,9 +12,22 @@
 <!-- ===  JS ASSETS ==== -->
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/osoco.min.js"></script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5ZCRJGMK');</script>
+<!-- End Google Tag Manager -->
 </head>
 <body>
 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZCRJGMK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
 <div id="fbody" class="Home">
     <!-- ==== container ==== -->
     <div class="container">
@@ -22,7 +35,7 @@
     <header class="header">
         <div class="content">
     	    <h1 class="logo"><a href="index.html"><picture><source srcset="assets/img/dyna-logo-small.svg" media="(max-width: 960px)"><img src="assets/img/dyna-logo.svg" alt="Logo DynaClassroom"></picture></a></h1>
-            <!-- <button class="menu">
+             <button class="menu">
                 <span>Menú</span>
                 <div class="hamburger">
                     <span class="child1"></span>
@@ -30,16 +43,16 @@
                     <span class="child3"></span>
                     <span class="child4"></span>
                 </div>
-            </button> -->
+            </button> 
             <div class="navigations">
         		<nav class="main-menu">
         			<ul>
         				<!-- <li><a href="index.html" class="active">Principal</a></li> -->
                         <!-- <li><a href="faqs.html">FAQs</a></li> -->
-        				<!-- <li><a href="contacto.html">Contacto</a></li> -->
+                        <li><a href="contacto.html">Contacto</a></li>
                         <!-- <li><a href="blog.html">Blog</a></li> -->
                         <!-- <li><a href="proyecto.html">Proyecto</a></li> -->
-        				<!-- <li><a href="contacto.html" class="btn" >Contacta</a></li> -->
+        			<!-- <li><a href="contacto.html" class="btn" >Contacta</a></li> -->
         			</ul>
         		</nav>
             </div>
@@ -49,32 +62,29 @@
     <!-- ==== content ==== -->
     	<main>
     		<section class="welcome">
-                <div class="banner-video">
-                    <!-- <iframe
-                        src="https://player.vimeo.com/video/1040056871?background=1&autoplay=1&loop=1&muted=1"
+                  <div class="banner-video">
+                    <iframe
+                        src="https://player.vimeo.com/video/1047791308?background=1&autoplay=1&loop=1&muted=1"
                         frameborder="0"
                         allow="autoplay; fullscreen; picture-in-picture"
                         allowfullscreen
                         class="vimeo-video">
-                    </iframe> -->
-                    <video autoplay loop muted playsinline>
-                        <source src="assets/img/dynaclassroom-web.mp4" type="video/mp4">
-                    </video>
+		            </iframe>
                 </div>
                 <div class="content welcome-content">
-                    <div class="txt-clame"><h2>Transforma objetos del mundo real en herramientas interactivas de aprendizaje</h2></div>
+                    <div class="txt-clame colaboración"><h2>Transforma objetos del mundo real en herramientas interactivas de aprendizaje</h2></div>
                     <div class="btn-circle">
                         <img src="assets/img/dyna-logo.svg" alt="Logo DynaClassroom" loading="lazy">
-                        <!-- <div class="buttons-cta">
+                        <div class="buttons-cta">
                             <a href="contacto.html" class="btn" >Contacta</a>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
                 <div class="content down-element">
-                    <img src="assets/img/up.svg" alt="">
+                    <a href="#main-info"><img src="assets/img/up.svg" alt=""></a>
                 </div>
     		</section>
-            <section class="main-info">
+            <section id="main-info" class="main-info">
                 <div class="content">
                     DynaClassroom es un <strong>entorno de aprendizaje</strong> para que estudiantes y docentes puedan <strong>explorar cualquier idea juntos</strong>, dotando de comportamiento computacional a los objetos del <strong>mundo real</strong>.
                 </div>
@@ -83,18 +93,20 @@
                 <div class="content">
                     <div class="gallery">
                         <div class="colums-2 animate-element">
-                            <p>En DynaClassroom usar el ordenador no significa utilizar pantallas, ratones y teclados, sino trabajar en el mundo real con objetos físicos que se pueden manipular.</p>
+                            <h2>Tecnología que cobra vida en el mundo real</h2>
+                            <p>En DynaClassroom, la tecnología deja atrás las pantallas para cobrar vida en tus manos. Aquí, los ordenadores no solo procesan datos; conectan con objetos físicos que puedes tocar, mover y explorar en el mundo real.</p>
                         </div>
-                        <div class="colums-2 rowns-2 animate-element">
-                            <p class="caption">Los programas de ordenador se convierten en objetos del mundo real. </p>
-                            <img src="assets/img/index-04.jpg" />
-                        </div>
-                        <div class="animate-element">
-                            <p class="caption">Pueden usarse papeles, pero también cualquier otro objeto, disponible en clase o manualidades construidas a propósito. </p>
+                        <div class="animate-element colums-2 rowns-2">
+                            <p class="caption">Desde papeles hasta manualidades, cualquier objeto se convierte en una herramienta educativa interactiva.</p>
                             <img src="assets/img/index-01.jpg" />
                         </div>
                         <div class="animate-element">
-                            <p class="caption">No necesitamos crear un mundo virtual con VR, sino que se aprovechan las propiedades de los objetos reales </p>
+                            <p class="caption">Los programas de ordenador ahora son tangibles.</p>
+                            <img src="assets/img/index-04.jpg" />
+                        </div>
+                        
+                        <div class="animate-element">
+                            <p class="caption">Los objetos reales tienen propiedades para inspirar aprendizaje y creatividad.</p>
                             <img src="assets/img/index-10.jpg" />
                         </div>
                     </div>
@@ -103,29 +115,30 @@
             <section class="index-section-02">
                 <div class="content">
                     <div class="gallery">
-                        <div class="animate-element column-text-der">
-                            <p>En DynaClassroom no creemos que la computación consista en aplicaciones cerradas con usuarios que son consumidores pasivos de los productos creados por otros.</p>
+                        <div class="animate-element colums-2">
+                            <h2>Aprender creando: el poder está en tus manos</h2>
+                            <p>En DynaClassroom, rompemos con la idea de que la computación significa ser un consumidor pasivo de herramientas. Aquí, los estudiantes son creadores activos, diseñando, explorando y reinventando su propio conocimiento.</p>
                         </div>
                         <div class="animate-element">
-                            <p class="caption">En DynaClassroom los estudiantes participan en la construcción de su propio conocimiento.</p>
+                            <p class="caption">Los estudiantes construyen, experimentan y dan forma a su propio conocimiento.</p>
                             <img src="assets/img/index-16.jpg" />
                         </div>
                         <div class=" rowns-2  animate-element">
-                            <p class="caption">Es un medio abierto al aprendizaje mediante exploración y experimentación. </p>
+                            <p class="caption">Un entorno abierto diseñado para aprender explorando, probando y creando sin límites. </p>
                             <img src="assets/img/index-02.jpg" />
                         </div>
                         <div class=" animate-element">
-                            <p class="caption">En DynaClassroom para que algo funcione debe estar visible para todo el mundo. Todo se puede inspeccionar, estudiar y cambiar. </p>
+                            <p class="caption">Todo es visible, comprensible y modificable. Aquí, el conocimiento es abierto para aprender y transformar. </p>
                             <img src="assets/img/index-08.jpg" />
                         </div>
                         <div class="animate-element">
-                            <p class="caption">Puedes usar los Kits que han preparado otros o puedes cambiar cualquier cosa de esos Kits, remezclar Kits de otros o construir los tuyos propios. </p>
-                            <img src="assets/img/index-06.jpg" />
+                            <p class="caption">Usa Kits creados por otros, modifícalos, combínalos o diseña los tuyos propios. Tú decides cómo aprender.</p>
+                            <img src="assets/img/index-09.jpg" />
                         </div>
-                        <div class="animate-element colums-2">
+                        <div class="animate-element">
                             <img src="assets/img/index-12.jpg" />
                             <span class="no-sign"></span>
-                            <p class="caption"><strong>NO</strong> se necesitan desarrolladores para crear el software, son los usuarios los que lo hacen para aprender sobre cualquier tema que se quiera explorar.</p>
+                            <p class="caption">El software <strong>NO</strong> necesita programadores: aquí, los usuarios lo crean para explorar y aprender sobre cualquier tema.</p>
                         </div>
                     </div>
                 </div>
@@ -134,44 +147,55 @@
                 <div class="content">
                     <div class="gallery">
                         <div class="animate-element colums-2">
-                            <p>DynaClassroom es un medio para el aprendizaje mediante la aplicación práctica de la computación a cualquier asignatura o temática .</p>
+                            <h2>Computación práctica para cualquier asignatura</h2>
+                            <p>DynaClassroom es la clave para integrar la computación de manera práctica en cualquier asignatura o tema. Más que enseñar programación, se trata de conectar el pensamiento computacional con el aprendizaje real y significativo.</p>
                         </div>
                         <div class=" animate-element rowns-2" >
-                            <p class="caption"><strong>NO</strong> es otra herramienta para aprender a programar.</p>
+                            <p class="caption">Va más allá de enseñar a programar: es un espacio para aplicar la computación al aprendizaje práctico.</p>
                             <span class="no-sign"></span>
                             <img src="assets/img/index-14.jpg" />
 
                         </div>
                         <div class=" animate-element rowns-2">
-                            <p class="caption"><strong>NO</strong> es un aula de informática, programación, robótica o pensamiento computacional como las existentes. Tampoco es algo que lo reemplace.</p>
+                            <p class="caption"><strong>NO</strong> es una clase tradicional de informática o programación. Es un complemento que amplía las posibilidades de aprendizaje en cualquier contexto.</p>
                             <span class="no-sign"></span>
                             <img src="assets/img/index-15.jpg" />
                         </div>
                         <div class="animate-element colums-2">
-                            <p class="caption">Permite aplicar el pensamiento computacional transversalmente a todas las asignaturas y actividades. </p>
-                            <img src="assets/img/index-07.jpg" />
+                          <p class="caption">Aplica el pensamiento computacional de forma transversal en todas las materias y actividades, integrándolo al aprendizaje cotidiano. </p>
+			                <iframe
+                              src="https://player.vimeo.com/video/1047791130?background=1&autoplay=1&loop=1&muted=1"
+                              frameborder="0"
+                              allow="autoplay; fullscreen; picture-in-picture"
+                              allowfullscreen
+                              class="video-section">
+		                    </iframe>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="index-section-04">
                 <div class="content">
+
                     <div class="gallery">
-                        <div class="animate-element column-text-der">
-                            <p>Es un medio que fomenta la participación activa y la colaboración para aprender mediante exploración. Los estudiantes aprenden todos juntos.</p>
+                        <div class="animate-element colums-3">
+                            <h2>Aprender juntos: exploración y colaboración</h2>
+                            <p>DynaClassroom transforma el aprendizaje en una experiencia compartida. Fomenta la participación activa, la colaboración y la exploración en grupo, donde los estudiantes descubren y aprenden juntos.</p>
                         </div>
-                        <div class=" animate-element colums-2 rowns-2">
-                            <p class="caption">Cada estudiante <strong>NO</strong> está aislado en su pantalla</p>
+                        <div class=" animate-element ">
+                            <p class="caption">El aprendizaje deja de ser solitario: los estudiantes comparten, interactúan y trabajan juntos, lejos de las pantallas individuales.</p>
                             <span class="no-sign"></span>
                             <img src="assets/img/index-13.jpg" />
                         </div>
-                        <div class=" animate-element">
-                            <p class="caption">Se propician dinámicas de grupo colaborativas e integradoras.</p>
-                            <img src="assets/img/index-08.jpg" />
+                        <div class=" animate-element colums-2">
+                            <p class="caption">Se crean dinámicas de grupo que inspiran colaboración, integración y aprendizaje colectivo.</p>
+
+                            <img src="assets/img/index-17.jpg" />
+
                         </div>
                         <div class="animate-element colums-2">
-                            <p class="caption"><strong>Ex<span class="super">3</span></strong> = Experimentar ,  Explorar y Expresarse de manera más colaborativa  y  natural.</p>
-                            <img src="assets/img/index-07.jpg" />
+                            <p class="caption"><strong>Ex<span class="super">3</span></strong> = Experimentar, Explorar y Expresarse, conectando ideas y personas de manera colaborativa y fluida.</p>
+                            <img src="assets/img/index-welcome.jpg" />
                         </div>
                     </div>
                 </div>
@@ -185,14 +209,20 @@
     <footer class="footer negative">
         <div class="content">
           <small>&copy; DynaClassroom</small>
-          <!-- <small>Diseñado y desarrollado desde España por <a href="https://osoco.es">OSOCO</a></small> -->
+            <small>Diseñado y desarrollado desde España por <a href="https://osoco.es">OSOCO</a></small> 
         	<nav>
-        	  <!-- <ul>
-        			<li><a href="terms.html">Terms of Use</a></li>		    
-        			<li><a href="privacy.html">Privacy Notice</a></li>
+        	   <ul>
+                    <li><a href="terms.html">Términos de Uso</a></li>		    
         			<li><a href="cookies.html">Cookies</a></li>				
-        		</ul> -->
-        	</nav>
+        		</ul> 
+        	</nav> 
+        </div>
+        <div class="project">
+            <div>
+                <p>El proyecto <em>DynaClassroom: Un Sistema de Realidad Mixta e Interfaces de Usuario Tangibles para el Aprendizaje Colaborativo en el Contexto de la Educación (FAV-010100-2022-30)</em> ha sido parcialmente financiado por el Ministerio de Transformación Digital y de la Función Pública.</p>
+            </div>
+            <div>
+                <img src="assets/img/MTDFP.jpg" alt="Logotipo del Ministerio de Transformación Digital y de la Función Pública"></div>
         </div>
     </footer> 
     <!-- ==== End footer ==== -->
