@@ -761,8 +761,8 @@ body section:first-child {
 .Home .welcome .btn-circle {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 100%;
-  height: 15em;
-  width: 15em;
+  height: 12em;
+  width: 12em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -770,7 +770,7 @@ body section:first-child {
   margin: auto;
 }
 .Home .welcome .btn-circle img {
-  width: 8em;
+  width: 50%;
 }
 .Home .welcome .content {
   z-index: 2;
@@ -795,7 +795,12 @@ body section:first-child {
   padding: 0 1em;
 }
 .Home .welcome .banner-video {
-  display: grid;
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  .Home .welcome .banner-video {
+    display: grid;
+  }
 }
 .Home .welcome .banner-video::after {
   display: block;
@@ -1039,9 +1044,12 @@ body section:first-child {
   font-size: 1em;
   width: 100%;
 }
-.contacto-page .buttons {
+.contacto-page .buttons, .contacto-page .buttons-center {
   display: flex;
   flex-direction: row-reverse;
+}
+.contacto-page .buttons-center {
+  justify-content: center;
 }
 
 .proy-section-01 {
