@@ -631,6 +631,10 @@ body section:first-child {
   display: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .buttons-cta {
   text-align: center;
   margin: 1em 0;
@@ -744,6 +748,45 @@ body section:first-child {
   top: 0;
 }
 
+.Home #open-video {
+  cursor: pointer;
+}
+.Home .video-vimeo {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+.Home .video-vimeo .video-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width: 95vw;
+  max-height: 95vh;
+  margin: auto;
+}
+.Home .video-vimeo .video-container iframe {
+  width: 100%;
+  height: 100%;
+  /* pointer-events: none; */
+}
+.Home .video-vimeo .video-container #close-video {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: max(4rem, 4vw);
+  cursor: pointer;
+  z-index: 1001;
+}
 .Home .welcome {
   background: linear-gradient(rgba(57, 184, 193, 0.5), rgba(239, 119, 90, 0.5)), url("../img/index-welcome.jpg");
   background-position: bottom;
@@ -793,6 +836,10 @@ body section:first-child {
   color: #EDECEC;
   filter: drop-shadow(0.02em 0.02em 0.02em #222);
   padding: 0 1em;
+}
+.Home .welcome .content.welcome-content .txt-clame img {
+  vertical-align: middle;
+  max-width: 1.2em;
 }
 .Home .welcome .banner-video {
   display: none;

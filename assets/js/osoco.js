@@ -130,4 +130,33 @@ $(document).ready(function () {
     // Monitorizar el scroll para cambiar la clase activa del menú
     const $document = $(document);
     $document.on("scroll", onScroll);
+
+
+    // Función para abrir/cerrar el video general en un lightbox
+    let videoContainer = $('.video-container');
+
+    $('#open-video').click(function() {
+        $('.video-vimeo').fadeIn();
+        $('body').addClass('no-scroll');
+
+        // Crear un nuevo iframe en cada apertura
+        let iframe = $('<iframe>', {
+            src: "https://player.vimeo.com/video/1053418095?autoplay=1&loop=0&muted=0&controls=1&dnt=1&title=0&byline=0&portrait=0",
+            frameborder: 0,
+            allow: "fullscreen; picture-in-picture; autoplay",
+            allowfullscreen: true,
+            class: "vimeo-video"
+        });
+
+        // Agregar el iframe al contenedor
+        videoContainer.prepend(iframe);
+    });
+
+    $('#close-video').click(function() {
+        $('.video-vimeo').fadeOut();
+        $('body').removeClass('no-scroll');
+
+        // Eliminar el iframe para detener el video
+        videoContainer.find('iframe').remove();
+    });
 });
