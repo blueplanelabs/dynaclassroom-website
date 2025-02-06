@@ -12,6 +12,7 @@
 <!-- ===  JS ASSETS ==== -->
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/osoco.min.js"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -72,7 +73,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		            </iframe>
                 </div>
                 <div class="content welcome-content">
-                    <div class="txt-clame colaboración"><h2>Transforma objetos del mundo real en herramientas interactivas de aprendizaje</h2></div>
+                    <div class="txt-clame colaboración"><h2 id="open-video">Transforma objetos del mundo real en herramientas interactivas de aprendizaje <span><img src="assets/img/play.svg" alt="Ver vídeo"></span></h2></div>
                     <div class="btn-circle">
                         <img src="assets/img/dyna-logo.svg" alt="Logo DynaClassroom" loading="lazy">
                         <div class="buttons-cta">
@@ -226,6 +227,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </footer> 
     <!-- ==== End footer ==== -->
+    <div class="video-vimeo" id="video-modal">
+        <div class="video-container">
+            <!-- El iframe de Vimeo se crea aquí dinámicamente -->
+            <button id="close-video">&times;</button>
+        </div>
+    </div>
 </div>
 </body>
 </html>
