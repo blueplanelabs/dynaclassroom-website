@@ -6,12 +6,12 @@
 <meta name="keywords" content="Educación, Aprendizaje, Tecnología, Realidad Mixta, Interfaces Tangibles, Aprendizaje Colaborativo">
 <meta name="news_keywords" content="Educación, Aprendizaje, Tecnología, Realidad Mixta, Interfaces Tangibles, Aprendizaje Colaborativo">
 
-<link rel="icon" type="image/png" sizes="64x64" href="assets/img/dyna-icon-64.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/img/dyna-icon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/img/dyna-icon-16.png">
-<link rel="shortcut icon" href="assets/img/favicon-32.ico" type="image/x-icon">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<meta property="og:image" content="assets/img/dyna-logo-info.png">
+<link rel="icon" type="image/png" sizes="64x64" href="{{ .Site.BaseURL }}/img/dyna-icon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}img/dyna-icon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}img/dyna-icon-16.png">
+<link rel="shortcut icon" href="{{ .Site.BaseURL }}img/favicon-32.ico" type="image/x-icon">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}apple-touch-icon.png">
+<meta property="og:image" content="{{ .Site.BaseURL }}img/dyna-logo-info.png">
 
 <meta name="twitter:site" content="@">
 <meta name="twitter:title" content="DynaClassroom">
@@ -24,5 +24,7 @@
 <title>{{ printf "%s | %s" site.Title .Title }}</title>
 
 {{ partialCached "head/css.html" . }}
-{{ partialCached "head/js.html" . }}
+{{ if .IsHome }}
+  {{ partialCached "head/js.html" . }}
+{{ end }}
 {{ partialCached "head/gtm.html" . }}

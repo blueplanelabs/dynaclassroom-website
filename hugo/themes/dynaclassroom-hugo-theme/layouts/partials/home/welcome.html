@@ -18,13 +18,13 @@
     <div class="txt-clame colaboración"><h2 id="open-video">{{ . | markdownify }}<span><img src="img/play.svg" alt="Ver vídeo"></span></h2></div>
     {{ end }}
     <div class="btn-circle">
-      <img src="img/dyna-logo.svg" alt="Logo DynaClassroom" loading="lazy">
+      <img src="{{ .Site.BaseURL }}img/dyna-logo.svg" alt="Logo DynaClassroom" loading="lazy">
       <div class="buttons-cta">
-        <a href="contacto.html" class="btn" >Contacta</a>
+        <a href="/contacto" class="btn" >Contacta</a>
       </div>
     </div>
   </div>
   <div class="content down-element">
-    <a href="#main-info"><img src="img/up.svg" alt=""></a>
+    <a href="#main-info"><img src="{{ .Site.BaseURL }}img/up.svg" alt=""></a>
   </div>
 </section>

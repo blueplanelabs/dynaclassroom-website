@@ -1,4 +1,4 @@
-baseURL = 'https://dynaclassroom.com'
+baseURL = '/'
 languageCode = 'es-ES'
 title = 'DynaClassroom'
 theme = 'dynaclassroom-hugo-theme'
@@ -6,9 +6,12 @@ theme = 'dynaclassroom-hugo-theme'
 [markup.goldmark.renderer]
 unsafe = true
 
-[params.home]
-  videoUrl = "https://player.vimeo.com/video/1047791308?background=1&autoplay=1&loop=1&muted=1"
-  claimBanner = "Transforma objetos del mundo real en herramientas interactivas de aprendizaje"
-  description = "DynaClassroom es un **entorno de aprendizaje** para que estudiantes y docentes puedan **explorar cualquier idea juntos**, dotando de comportamiento computacional a los objetos del **mundo real**."
-  
+[params]
+  googleTagManagerId = 'GTM-5ZCRJGMK'
+
+  [params.home]
+    videoUrl = "https://player.vimeo.com/video/1047791308?background=1&autoplay=1&loop=1&muted=1"
+    claimBanner = "Transforma objetos del mundo real en herramientas interactivas de aprendizaje"
+    description = "DynaClassroom es un **entorno de aprendizaje** para que estudiantes y docentes puedan **explorar cualquier idea juntos**, dotando de comportamiento computacional a los objetos del **mundo real**."
+
 

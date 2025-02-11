@@ -1,7 +1,7 @@
     <!-- ==== header ==== -->
     <header class="header">
         <div class="content">
-    	    <h1 class="logo"><a href="index.html"><picture><source srcset="img/dyna-logo-small.svg" media="(max-width: 960px)"><img src="img/dyna-logo.svg" alt="Logo DynaClassroom"></picture></a></h1>
+    	    <h1 class="logo"><a href="{{ .Site.BaseURL }}"><picture><source srcset="{{ .Site.BaseURL }}img/dyna-logo-small.svg" media="(max-width: 960px)"><img src="{{ .Site.BaseURL }}img/dyna-logo.svg" alt="Logo DynaClassroom"></picture></a></h1>
              <button class="menu">
                 <span>Menú</span>
                 <div class="hamburger">
@@ -16,7 +16,7 @@
         			<ul>
         				<!-- <li><a href="index.html" class="active">Principal</a></li> -->
                         <!-- <li><a href="faqs.html">FAQs</a></li> -->
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="/contacto">Contacto</a></li>
                         <!-- <li><a href="blog.html">Blog</a></li> -->
                         <!-- <li><a href="proyecto.html">Proyecto</a></li> -->
         			<!-- <li><a href="contacto.html" class="btn" >Contacta</a></li> -->

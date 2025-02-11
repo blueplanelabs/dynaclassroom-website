@@ -5,24 +5,31 @@
 </head>
 <body>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZCRJGMK"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-  
+  {{ partial "gtm-noscript.html" . }}
+    
 <div id="fbody" class="{{ if .IsHome }}Home{{ else }}Page{{ end }}">
 
   <!-- ==== container ==== -->
   <div class="container">
     {{ partial "header.html" . }}
-    <main>
+    <main {{ if .Params.isContacto }}class="contacto-page"{{end}}>
       {{ block "main" . }}{{ end }}
     </main>
+    <a href="#fbody" class="top" title="subir" ><span>Top</span></a>
   </div>
   <!-- ==== End container ==== -->
 
   <footer class="footer negative">
     {{ partial "footer.html" . }}
   </footer>
+
+  {{ if .IsHome }}
+    <div class="video-vimeo" id="video-modal">
+        <div class="video-container">
+            <!-- El iframe de Vimeo se crea aquí dinámicamente -->
+            <button id="close-video">&times;</button>
+        </div>
+    </div>
+  {{ end }}
 </body>
 </html>
