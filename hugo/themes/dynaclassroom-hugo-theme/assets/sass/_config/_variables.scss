@@ -1,0 +1,100 @@
+// -----------------------------------------------------------------------
+// VARIABLES
+// -----------------------------------------------------------------------
+
+// TABLE OF CONTENTS:
+
+// - 00 + PATHS
+// - 01 + FONTS
+// - 02 + COLORS
+// - 03 + GENERIC MEASURES
+
+$_mediaQueries:     true  !default;
+$_needMobile:       true  !default;
+$_needAMP:       	false  !default;
+$_needDesktop:      true  !default;
+$_pseudoClasses:    true  !default;
+$_needApp:          false !default;
+$_needBrowser:      true  !default;
+
+// - 00 + PATHS
+$_imgPathCore: "" !default;
+$_fontsPathCore: "../fonts" !default;
+
+
+// - 01 + FONTS
+$_fontText:     'Roboto', sans-serif; 
+$_fontTitle:    'Roboto', sans-serif !default;
+$_fontIcons:  "FontAwesome",  Arial, Helvetica, sans-serif !default;
+
+// - 02 + COLORS
+// -- value by default for a color --
+
+// CORPORATIVOS
+
+$_colorCorporativo1: #39B8C1 !default; 
+$_colorCorporativo2: #EF775A !default; 
+$_colorCorporativo3: #E84678 !default; 
+$_colorCorporativo4: #FBCF63 !default;
+
+$_colorCorporativo1-dark: #01767E !default; 
+$_colorCorporativo2-dark: #AA2D0E !default; 
+$_colorCorporativo3-dark: #7F1939 !default; 
+$_colorCorporativo4-dark: #C29628 !default;
+
+$_colorCorporativo1-light: #9EF9FF !default; 
+$_colorCorporativo2-light: #FFB2A0 !default; 
+$_colorCorporativo3-light: #FFDFE9 !default; 
+$_colorCorporativo4-light: #FFE198 !default;
+
+
+// GENÉRICOS
+
+$_colorNegro:            #160f2c !default; 
+$_colorBlanco:           #fff !default; 
+$_colorGris:             #888 !default; 
+$_colorFilete:           #aaa !default; 
+
+$_colorNeutro:      $_colorGris !default;
+$_colorBase:        $_colorNeutro !default; 
+$_colorLink:        $_colorCorporativo3 !default;
+$_colorFeatured:    $_colorNeutro !default;
+
+
+$_colorText:       #4E4747 !default; 
+$_colorNeutro:     #EDECEC; 
+$_colorTitle:      $_colorCorporativo2; 
+
+
+// TOOL Y SOCIAL MEDIA
+// ===================================================
+$_colorFacebook      : #3b5998;
+$_colorFacebookLike  : #4C63A5;
+$_colorTwitter       : #1b95e0;
+$_colorGooglePlus    : #dc4e41;
+$_colorGoogle    	 : #dc4e41;
+$_colorEmail         : $_colorCorporativo1;
+$_colorTools         : $_colorCorporativo1;
+$_colorPinterest     : #bd081c;
+$_colorLinkedin      : #0077b5;
+$_colorTumblr        : #35465c;
+$_colorWhatsapp      : #4BC557;
+$_colorYouTube       : #cd201f;
+$_colorInstagram     : #3f729b;
+$_colorFlickr        : #0063dc;
+$_colorTelegram      : #0088cc;
+$_colorSkype         : #00aff0;
+$_colorViber         : #8f5db7;
+$_colorVine			 : #00b488;
+$_colorVK			 : #45668e;
+$_colorMeneame		 : #e26615;
+
+
+// - 03 + GENERIC MEASURES
+$_padding:      1em        !default;
+$_margin:       $_padding   !default;
+$_indent:       2em;
+$_borderRadius: 1em;
+
+
+

@@ -1,0 +1,17 @@
+{{ with resources.Get "sass/style.scss" }}
+  {{ $opts := dict
+    "enableSourceMap" (not hugo.IsProduction)
+    "outputStyle" (cond hugo.IsProduction "compressed" "expanded")
+    "targetPath" "css/style.css"
+    "transpiler" "dartsass"
+  }}
+  {{ with . | toCSS $opts }}
+    {{ if hugo.IsProduction }}
+      {{ with . | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" media="all" type="text/css" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{ end }}
+    {{ else }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" media="all" type="text/css">
+    {{ end }}
+  {{ end }}
+{{ end }}

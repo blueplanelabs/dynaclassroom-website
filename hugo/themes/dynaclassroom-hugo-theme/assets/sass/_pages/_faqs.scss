@@ -1,0 +1,26 @@
+.faqs-index{
+    background: $_colorCorporativo4-light;
+}
+.faqs-questions{
+    padding: max(7vw, 1em) 0;
+    background-color: $_colorBlanco;
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: $_padding;
+        > div{
+            background-color: $_colorCorporativo4-light;
+            border-radius: $_padding;
+            padding: $_padding;
+            &:nth-child(4n-3){
+                background-color: $_colorCorporativo2-light;
+            }
+            &:nth-child(4n-2){
+                background-color: $_colorCorporativo3-light;
+            }
+            &:nth-child(4n-1){
+                background-color: $_colorCorporativo1-light;
+            }
+        }
+    }
+}

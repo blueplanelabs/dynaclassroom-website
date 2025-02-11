@@ -1,0 +1,60 @@
+// -----------------------------------------------------------------------
+// FONTS
+// -----------------------------------------------------------------------
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('#{$_fontsPathCore}/font-awesome/fontawesome-webfont.eot');
+	src: url('#{$_fontsPathCore}/font-awesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+	url('#{$_fontsPathCore}/font-awesome/fontawesome-webfont.woff2') format('woff2'),
+	url('#{$_fontsPathCore}/font-awesome/fontawesome-webfont.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+	font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('#{$_fontsPathCore}/Roboto/Roboto-Bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('#{$_fontsPathCore}/Roboto/Roboto-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('#{$_fontsPathCore}/Roboto/Roboto-Light-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url('#{$_fontsPathCore}/exo/Exo-Regular.woff2') format('woff2'),
+        url('#{$_fontsPathCore}/exo/Exo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url('#{$_fontsPathCore}/exo/Exo-Light.woff2') format('woff2'),
+        url('#{$_fontsPathCore}/exo/Exo-Light.woff') format('woff');
+    font-weight: 300; 
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url('#{$_fontsPathCore}/exo/Exo-Bold.woff2') format('woff2'),
+        url('#{$_fontsPathCore}/exo/Exo-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,30 @@
+<section class="welcome">
+
+  {{ with .Site.Params.home.videoUrl }}
+  <div class="banner-video">
+    <iframe
+      src="https://player.vimeo.com/video/1047791308?background=1&autoplay=1&loop=1&muted=1"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen
+      class="vimeo-video">
+    </iframe>
+  </div>
+  {{ end }}
+
+
+  <div class="content welcome-content">
+    {{ with .Site.Params.home.claimBanner }}
+    <div class="txt-clame colaboración"><h2 id="open-video">{{ . | markdownify }}<span><img src="img/play.svg" alt="Ver vídeo"></span></h2></div>
+    {{ end }}
+    <div class="btn-circle">
+      <img src="img/dyna-logo.svg" alt="Logo DynaClassroom" loading="lazy">
+      <div class="buttons-cta">
+        <a href="contacto.html" class="btn" >Contacta</a>
+      </div>
+    </div>
+  </div>
+  <div class="content down-element">
+    <a href="#main-info"><img src="img/up.svg" alt=""></a>
+  </div>
+</section>

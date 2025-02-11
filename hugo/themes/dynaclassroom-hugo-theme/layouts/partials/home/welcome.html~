@@ -1,0 +1,25 @@
+<section class="welcome">
+  
+  <div class="banner-video">
+    <iframe
+      src="https://player.vimeo.com/video/1047791308?background=1&autoplay=1&loop=1&muted=1"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen
+      class="vimeo-video">
+    </iframe>
+  </div>
+  
+  <div class="content welcome-content">
+    <div class="txt-clame colaboración"><h2 id="open-video">Transforma objetos del mundo real en herramientas interactivas de aprendizaje <span><img src="img/play.svg" alt="Ver vídeo"></span></h2></div>
+    <div class="btn-circle">
+      <img src="img/dyna-logo.svg" alt="Logo DynaClassroom" loading="lazy">
+      <div class="buttons-cta">
+        <a href="contacto.html" class="btn" >Contacta</a>
+      </div>
+    </div>
+  </div>
+  <div class="content down-element">
+    <a href="#main-info"><img src="img/up.svg" alt=""></a>
+  </div>
+</section>

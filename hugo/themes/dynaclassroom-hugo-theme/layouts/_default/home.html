@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+  {{ partial "home/welcome" . }}
+
+  {{ partial "home/description" . }}
+
+  {{ range $index, $section := (site.GetPage "home/sections").Pages }}
+  <section class="index-section-0{{ math.Sum $index 1 }}">
+    <div class="content">
+      {{ $section.Content }}
+    </div>
+  </section>
+  {{ end }}
+
+  <a href="#fbody" class="top" title="subir" ><span>Top</span></a>
+
+{{ end }}

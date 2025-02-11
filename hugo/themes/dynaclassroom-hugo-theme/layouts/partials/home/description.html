@@ -1,0 +1,7 @@
+{{ with .Site.Params.home.description }}
+<section id="main-info" class="main-info">
+  <div class="content">
+    {{ . | markdownify }}
+  </div>
+</section>
+{{ end }}
