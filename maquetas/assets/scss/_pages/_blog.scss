@@ -4,6 +4,9 @@
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    
+    section{ body &{margin-top: 1.5em;}}
+    
     .content{
         display: grid;
         gap: $_padding;
@@ -11,6 +14,30 @@
         @include respond-to-device(slg, false) {
             grid-template-columns: repeat(auto-fill, minmax(30svw, 1fr));
         }
+    }
+    .full-column{
+        grid-column: 1/-1;
+        img{
+            height: 2em;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 50%;
+        vertical-align: middle;
+        }
+    }
+    .backTolist{
+        background-color: $_colorBlanco;
+        padding: $_padding;
+        border-radius: $_borderRadius;
+        font-size: .8em;
+        display: flex;
+        flex-direction: column;
+        @include respond-to-device(xsm, false) {
+            flex-direction: row;
+        }
+        gap: $_padding;
+        justify-content: space-between;
+        align-items: center;
     }
     .blog-panel{
         background-color: rgba($color: $_colorBlanco, $alpha: 0.8) ;
@@ -43,6 +70,9 @@
             font-size: .8em;
             padding-bottom: .5em;
         }
+    }
+    .tag-list{
+        font-size: .8em;
     }
 }
 .blog-detail-page{
@@ -80,6 +110,18 @@
         ul{
             display: flex;
             gap: .5em;
+        }
+    }
+    .post-author{
+        display: flex;
+        flex-direction: column;
+        font-size: .8em;
+        text-align: center;
+        color: $_colorBlanco;
+        transition: all .2s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+            transition: all .2s ease-in-out;
         }
     }
     .img-post{

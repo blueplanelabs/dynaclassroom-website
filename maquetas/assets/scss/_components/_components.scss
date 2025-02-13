@@ -21,6 +21,11 @@
         transform: scale(1.1);
     }
 }
+.btn-secondary{
+    @extend .btn;
+    background-color: $_colorBlanco;
+    border: 2px solid $_colorLink;
+}
 .btn-close{
     padding: .5em;
     text-align: right;
