@@ -11,7 +11,7 @@ title = 'Contacto Recibido'
       <img src="{{ .Site.baseURL }}img/ok-form.svg" alt="">
       <p>Tu formulario ha sido enviado, nos pondremos en contacto contigo lo antes posible.</p>
       <div class="buttons-center">
-        <a href="{{ .Site.baseURL }}" class="btn">Volver</a>
+        <a href="{{ .Site.BaseURL }}" class="btn">Volver</a>
       </div>
   </div>
 </section>
