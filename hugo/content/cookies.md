@@ -18,13 +18,9 @@ title = 'Términos de Uso'
     </p>
     <p>
       Pra más informmación sobre las cookies, puedes visitar 
-      <a href="http://allaboutcookies.org" target="_blank"
-	 >https://allaboutcookies.org</a
-				       >.
+      <a href="http://allaboutcookies.org" target="_blank">https://allaboutcookies.org</a>.
     </p>
-
     <h2>¿Cómo usamos las cookies?</h2>
-
     <p>
       En DynaClassroom utilizamos cookies de diferentes formas para mejorar tu experiencia en nuestro sitio web, incluyendo:
     </p>
@@ -35,22 +31,14 @@ title = 'Términos de Uso'
     </ul>
     <p>
       En ningún caso, nuestras cookies procesarán datos personales ni comprometerán tu privacidad.
-
     </p>
-
     <h2>¿Qué tipos de cookies utilizamos?</h2>
-
     <p>
       Nuestro sitio web utiliza los siguientes tipos de cookies:
-
-
     </p>
-
     <ul>
       <li>
 	<strong>Cookies de funcionalidad</strong>: Estas cookies nos permiten reconocerte cuando visitas nuestro sitio y recordar tus preferencias, como el idioma que seleccionaste o tu ubicación. Utilizamos una combinación de cookies propias y de terceros para ofrecerte una experiencia personalizada.
-
-
       </li>
       <li>
 	<strong>Cookies analíticas</strong>: Estas cookies recopilan información sobre tu visita a nuestro sitio web, como las páginas que has visitado, los enlaces en los que hiciste clic, y detalles sobre tu navegador, dispositivo y dirección IP.</p>

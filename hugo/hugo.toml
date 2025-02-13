@@ -6,6 +6,25 @@ theme = 'dynaclassroom-hugo-theme'
 [markup.goldmark.renderer]
 unsafe = true
 
+[menus]
+  [[menus.main]]
+    name = 'Principal'
+    pageRef = '/'
+    weight = 10
+  [[menus.main]]
+    name = 'Contacto'
+    pageRef = '/contacto'
+    weight = 20
+
+  [[menus.footer]]
+    name = 'Términos de Uso'
+    pageRef = '/terminos'
+    weight = 10
+  [[menus.footer]]
+    name = 'Cookies'
+    pageRef = '/cookies'
+    weight = 20
+
 [params]
   googleTagManagerId = 'GTM-5ZCRJGMK'
 

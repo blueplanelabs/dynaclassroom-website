@@ -1,17 +1,13 @@
-        <div class="content">
-          <small>&copy; 2021-{{ now.Year }} DynaClassroom.</small>
-          <small>Diseñado y desarrollado desde España por <a href="https://osoco.es">OSOCO</a>.</small> 
-        	<nav>
-        	   <ul>
-                     <li><a href="/terminos">Términos de Uso</a></li>
-		     <li><a href="/cookies">Cookies</a></li>				
-        	   </ul> 
-        	</nav> 
-        </div>
-        <div class="project">
-            <div>
-                <p>El proyecto <em>DynaClassroom: Un Sistema de Realidad Mixta e Interfaces de Usuario Tangibles para el Aprendizaje Colaborativo en el Contexto de la Educación (FAV-010100-2022-30)</em> ha sido parcialmente financiado por el Ministerio de Transformación Digital y de la Función Pública.</p>
-            </div>
-            <div>
-                <img src="img/MTDFP.jpg" alt="Logotipo del Ministerio de Transformación Digital y de la Función Pública"></div>
-        </div>
+<div class="content">
+  <small>&copy; 2021-{{ now.Year }} DynaClassroom.</small>
+  <small>Diseñado y desarrollado desde España por <a href="https://osoco.es">OSOCO</a>.</small>
+  {{ partial "menu.html" (dict "menuID" "footer" "page" .) }}
+</div>
+
+<div class="project">
+  <div>
+    <p>El proyecto <em>DynaClassroom: Un Sistema de Realidad Mixta e Interfaces de Usuario Tangibles para el Aprendizaje Colaborativo en el Contexto de la Educación (FAV-010100-2022-30)</em> ha sido parcialmente financiado por el Ministerio de Transformación Digital y de la Función Pública.</p>
+  </div>
+  <div>
+    <img src="img/MTDFP.jpg" alt="Logotipo del Ministerio de Transformación Digital y de la Función Pública"></div>
+</div>

@@ -3,15 +3,17 @@ Renders a menu for the given menu ID.
 
 @context {page} page The current page.
 @context {string} menuID The menu ID.
+@context {string} class The CSS class for the nav element
 
-@example: {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+@example: {{ partial "menu.html" (dict "menuID" "main" "page" . "class" "main-menu") }}
 */}}
 
 {{- $page := .page }}
 {{- $menuID := .menuID }}
+{{- $class := .class }}
 
 {{- with index site.Menus $menuID }}
-  <nav>
+  <nav {{with $class }}class="{{ $class }}"{{end}}>
     <ul>
       {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
     </ul>
