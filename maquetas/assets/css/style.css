@@ -1334,11 +1334,25 @@ body .blog-page section {
   background-color: #fff;
   border-radius: 0.5em;
 }
+.other-posts .content > div .posts-author ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  gap: 0.5em;
+}
+.other-posts .content > div .posts-author a {
+  display: grid;
+  gap: 0.5em;
+  color: #fff;
+  font-size: min(1em, 12px);
+  text-align: center;
+  line-height: 1em;
+}
 .other-posts .content > div .posts-author a img {
   border: 2px solid #fff;
   filter: grayscale(100%) brightness(1.5);
-  width: max(5em, 5vw);
-  height: max(5em, 5vw);
+  margin: auto;
+  width: max(10em, 10vw);
+  aspect-ratio: 1/1;
   border-radius: 50%;
   object-fit: cover;
 }
