@@ -11,8 +11,14 @@
 
   <!-- ==== container ==== -->
   <div class="container">
-    {{ partial "header.html" . }}
-    <main {{ with .Section }}class="{{ . }}-page"{{end}}>
+
+  {{ if .IsNode }}
+    {{ partial "header" . }}
+  {{ else }}
+    {{ partial "header-blog" . }}
+  {{ end }}
+  
+  <main {{ if .IsNode }}class="blog-page"{{else}}class="blog-detail-page"{{ end }}>
       {{ block "main" . }}{{ end }}
     </main>
     <a href="#fbody" class="top" title="subir" ><span>Top</span></a>
@@ -23,13 +29,5 @@
     {{ partial "footer.html" . }}
   </footer>
 
-  {{ if .IsHome }}
-    <div class="video-vimeo" id="video-modal">
-        <div class="video-container">
-            <!-- El iframe de Vimeo se crea aquí dinámicamente -->
-            <button id="close-video">&times;</button>
-        </div>
-    </div>
-  {{ end }}
 </body>
 </html>

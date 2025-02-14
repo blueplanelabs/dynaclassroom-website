@@ -1,0 +1,52 @@
+{{ define "main" }}
+<div class="post-header">
+  <img src="{{ .Site.BaseURL }}img/blog/{{ .Params.Background }}" alt="">
+  <div class="content">
+    <div class="post-title">
+      <div>
+	{{range $key, $author := .Params.Authors}}
+	{{ $authorFirstname := title (index (split $author "-") 0) }}
+	{{ $authorPhoto := (index $.Params.AuthorPhotos $key) }}
+	<a href="{{ $.Site.BaseURL }}authors/{{ $author }}" class="post-author" title="Todos los posts de {{ $authorFirstname }}"><img src="{{ $.Site.BaseURL }}img/personas/{{ $authorPhoto }}" alt="{{ $author | humanize }}"/></a>
+	<a href="{{ $.Site.BaseURL }}authors/{{ $author }}" title="Todos los posts de {{ $authorFirstname }}">{{ $author | humanize }}</a>
+	{{end}}
+      </div>
+      <div class="post-date">
+        <div class="post-day">{{ index (split (.Date.Format "2 Jan") " ") 0 }}</div>
+        <div class="post-month">{{ dateFormat "Jan" .Params.Date }}</div>
+        <div class="post-year">{{ dateFormat "2006" .Params.Date }}</div>
+      </div>
+      <div>
+        <h2>{{ .Title | markdownify }}</h2>
+        <p>{{ .Params.Subtitle | markdownify }}</p>
+      </div>
+    </div>
+
+  </div> 
+</div>
+
+<div class="post-header-info">
+  <div class="content">
+    Tiempo: {{ .ReadingTime }} minuto{{ if gt .ReadingTime 1 }}s{{ end }}
+    {{ with .Params.Tags }}
+    <ul>
+      {{ range (sort .) }}
+      <li>{{ partial "post-tag-link" . }}</li>
+      {{ end }}
+    </ul>
+    {{ end }}
+
+    </p>
+    {{ if and (isset .Params "summary") (ne (trim .Params.Summary " ") "") }}
+    <p><strong>Resumen:</strong> {{ .Params.Summary | markdownify }}</p>
+    {{ end }}
+  </div>
+</div>
+
+<section>
+  <div class="content">
+    {{ .Content | markdownify }}
+  </div>
+</section>
+
+{{ end }}

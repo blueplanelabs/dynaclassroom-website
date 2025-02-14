@@ -1,0 +1,18 @@
+    <div class="blog-panel">
+      <img src="{{ .Site.BaseURL }}img/blog/{{ .Params.BackgroundSummary }}">
+      <div>
+        <div class="post-date"><a href="blog-fechas.html">{{ time.Format ":date_short" .Params.Date }}</a> - {{ .ReadingTime }} minuto{{ if gt .ReadingTime 1 }}s{{ end }}</div>
+        <h2><a href="{{ .Permalink }}">{{ .Params.Title | markdownify }}</a></h2>
+        <p>{{ .Summary }}</p>
+        <div>
+	  {{ with .Params.Authors }}
+            {{ (delimit (apply (sort .) "partial" "author-link" ".") ", " " y ") | safeHTML }}
+	  {{ end }}
+	</div>
+	<div class="tag-list">
+          {{ with .Params.Tags }}
+            {{ (delimit (apply (sort .) "partial" "post-tag-link" ".") ", " " y ") | safeHTML }}
+          {{ end }}
+	</div>
+      </div>
+    </div>

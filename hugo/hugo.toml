@@ -1,7 +1,7 @@
 baseURL = '/'
-languageCode = 'es-ES'
 title = 'DynaClassroom'
 theme = 'dynaclassroom-hugo-theme'
+defaultContentLanguage = 'es'
 
 [markup.goldmark.renderer]
 unsafe = true
@@ -12,9 +12,13 @@ unsafe = true
     pageRef = '/'
     weight = 10
   [[menus.main]]
-    name = 'Contacto'
-    pageRef = '/contacto'
+    name = 'Blog'
+    pageRef = '/blog'
     weight = 20
+  [[menus.main]]
+    name = 'Contacto'
+    pageRef = '/contacto/contacto'
+    weight = 30
 
   [[menus.footer]]
     name = 'Términos de Uso'

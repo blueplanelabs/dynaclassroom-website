@@ -1,0 +1,39 @@
+            <div class="post-header">
+                <img src="assets/img/blog01.jpg" alt="">
+                <div class="content">
+                    <div class="post-title">
+                        <div>
+                            <a href="blog-autores.html" class="post-author">
+                                <img src="https://osoco.es/images/personas/paloma-dom%c3%adnguez.jpg" alt="">
+                                Paloma Domínguez
+                            </a>
+                        </div>
+                        <div class="post-date">
+                            <div class="post-day">23</div>
+                            <div class="post-month">Jun</div>
+                            <div class="post-year">2024</div>
+                        </div>
+                        <div>
+                            <h2>Co-designing DynaClassroom with Children (Part 1)</h2>
+                            <p>The concept of participatory design</p>
+                        </div>
+                    </div>
+
+                </div> 
+            </div>
+	    
+            <div class="post-header-info">
+                <div class="content">
+                    Tiempo: 8 minutos
+                    <ul>
+                        <li><a href="#">#design</a></li>
+                        <li><a href="#">#dynaclassroom</a></li>
+                    </ul>
+                </div>
+            </div>
+	    
+            <section>
+                <div class="content">
+		</div>
+            </section>
+	    

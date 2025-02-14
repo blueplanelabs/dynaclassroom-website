@@ -1,0 +1,12 @@
+{{ define "main" }}
+<section>
+  <div class="content">
+    
+{{ range .RegularPages.ByDate.Reverse }}
+    {{ .Render "summary" }}
+{{ end }}
+    
+  </div>
+</section>
+
+{{ end }}
