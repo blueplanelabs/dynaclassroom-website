@@ -2,6 +2,9 @@
 
     #open-video{
         cursor: pointer;
+        img{
+            margin-left: .5em;
+        }
     }
     .video-vimeo {
         display: none;

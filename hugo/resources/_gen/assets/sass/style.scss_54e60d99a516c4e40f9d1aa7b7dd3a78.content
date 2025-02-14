@@ -751,6 +751,9 @@ body section:first-child {
 .Home #open-video {
   cursor: pointer;
 }
+.Home #open-video img {
+  margin-left: 0.5em;
+}
 .Home .video-vimeo {
   display: none;
   position: fixed;
@@ -1057,6 +1060,12 @@ body section:first-child {
 }
 .contacto-page section {
   width: 100vw;
+}
+.contacto-page section:first-child {
+  margin-top: 0;
+}
+.contacto-page section > .content {
+  padding: 0;
 }
 .contacto-page .form-panel {
   max-width: 38em;
