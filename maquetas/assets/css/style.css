@@ -1291,6 +1291,58 @@ body .blog-page section {
   font-size: 1.2em;
 }
 
+.other-posts {
+  background-color: #E84678;
+  color: #fff;
+  padding-top: 0;
+}
+.other-posts h2 {
+  font-size: max(2rem, 2vw);
+  padding-bottom: 0.5em;
+}
+.other-posts h3 {
+  font-size: max(1.5rem, 1.5vw);
+  border-bottom: 1px solid #FFDFE9;
+  padding-bottom: 0.1em;
+  margin-bottom: 0.5em;
+}
+.other-posts .content > div {
+  display: grid;
+  gap: 1em;
+}
+@media screen and (min-width: 640px) {
+  .other-posts .content > div {
+    grid-template-columns: repeat(auto-fill, minmax(30svw, 1fr));
+  }
+}
+.other-posts .content > div ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+.other-posts .content > div a {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+  display: block;
+}
+.other-posts .content > div a:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+.other-posts .content > div .posts-date a, .other-posts .content > div .posts-tags a {
+  padding: 0.2em 0.5em;
+  background-color: #fff;
+  border-radius: 0.5em;
+}
+.other-posts .content > div .posts-author a img {
+  border: 2px solid #fff;
+  filter: grayscale(100%) brightness(1.5);
+  width: max(5em, 5vw);
+  height: max(5em, 5vw);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .icon-back {
   height: 1.5em;
 }
