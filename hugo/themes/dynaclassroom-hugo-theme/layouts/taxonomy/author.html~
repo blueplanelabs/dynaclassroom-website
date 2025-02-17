@@ -1,0 +1,69 @@
+{{ define "main" }}
+
+{{ $firstName := title (index (split .Data.Term "-") 0)  }}
+
+<section>
+		<div class="divBlogFilteredLabel">
+				<h5 class="txtBlogFilterTitle2">Estás viendo los pensamientos escritos por <strong>{{ .Data.Term | humanize }}</strong></h5>
+				<a href="{{ .Site.BaseURL }}thoughts" class="link"><p>Cerrar y ver todos los pensamientos</p></a>
+		</div>
+</section>
+
+<section>
+		<article class="containerContent backgroundWhite noPadding">
+				<div class="divBlogWrapper">
+	 			    {{ range .Data.Pages }}
+		  		      {{ .Render "summary" }}
+						{{ end }}
+				</div>
+		</article>
+</section>
+
+<section>
+		<article class="containerContent backgroundGrey1 noPadding">
+				<div class="divColCenter half">
+						<div class="divColQuarter center">
+								<h5 class="txtBlogFilterTitle">Otros pensamientos de {{ $firstName }}:</h5>
+								{{ range $key, $value := .Site.Taxonomies.months }}
+									{{ range $value }}
+  									{{ if in .Page.Params.Authors $.Data.Term }}
+		  								{{ $.Scratch.Add "userMonths" (slice $key) }}
+				  					{{ end }}
+					  			{{end}}
+								{{ end }}
+
+                <ul class="txtBlogFilterList">
+                    {{ range first 10 (uniq ($.Scratch.Get "userMonths")) }}
+										<li><a href="{{ $.Site.BaseURL }}months/{{ . | urlize }}">{{ . }}</a></li>
+										{{ end }}
+								</ul>
+						</div>
+						<div class="divColQuarter center">
+								<h5 class="txtBlogFilterTitle">Otros temas de {{ $firstName }}:</h5>
+								{{ range $key, $value := .Site.Taxonomies.tags }}
+									{{ range $value }}
+  									{{ if in .Page.Params.Authors $.Data.Term }}
+		  								{{ $.Scratch.Add "userTags" (slice $key) }}
+				  					{{ end }}
+					  			{{end}}
+								{{ end }}
+                <ul class="txtBlogFilterList">
+									{{ range first 10 (uniq ($.Scratch.Get "userTags")) }}
+									<li><a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">#{{ . }}</a></li>
+  								{{ end }}
+								</ul>
+						</div>
+				</div>
+				<div class="divColCenter backgroundGrey4 half">
+						<div class="divBlogAuthorContainer">
+								<div class="divBlogAuthorPicture" style="background-image:url({{ $.Site.BaseURL }}images/personas/{{ .Data.Term }}.jpg);">
+								</div>
+								<div class="divBlogAuthorText">
+										<h5 class="txtBlogAuthorName">{{ .Data.Term | humanize }}</h5>
+								</div>
+						</div>
+				</div>
+		</article>
+</section>
+
+{{ end }}

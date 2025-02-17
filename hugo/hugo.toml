@@ -29,6 +29,14 @@ unsafe = true
     pageRef = '/cookies'
     weight = 20
 
+[permalinks]
+  thoughts = "/blog/:year/:month/:title/"
+
+[taxonomies]
+  tag = "tags"
+  month = "months"
+  author = "authors"
+
 [params]
   googleTagManagerId = 'GTM-5ZCRJGMK'
 

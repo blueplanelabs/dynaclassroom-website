@@ -35,17 +35,28 @@
       {{ end }}
     </ul>
     {{ end }}
-
-    </p>
-    {{ if and (isset .Params "summary") (ne (trim .Params.Summary " ") "") }}
-    <p><strong>Resumen:</strong> {{ .Params.Summary | markdownify }}</p>
-    {{ end }}
-  </div>
+</p>
+{{ if and (isset .Params "summary") (ne (trim .Params.Summary " ") "") }}
+<p><strong>Resumen:</strong> {{ .Params.Summary | markdownify }}</p>
+{{ end }}
+</div>
 </div>
 
 <section>
   <div class="content">
     {{ .Content | markdownify }}
+  </div>
+</section>
+
+<section class="other-posts">
+  <div class="content">
+    <div class="posts-author">
+      <ul>
+	{{range .Params.Authors}}
+	<li><a href="{{ $.Site.BaseURL }}authors/{{ . }}">Más pensamientos de {{ . | humanize }}</a></li>
+	{{end}}
+      </ul>
+    </div>
   </div>
 </section>
 

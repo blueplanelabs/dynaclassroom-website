@@ -1,0 +1,58 @@
+{{ define "main" }}
+
+<section>
+  <p>Estás viendo los pensamientos escritos sobre el tema <strong>#{{ .Data.Term | humanize }}</strong>
+<a href="{{ .Site.BaseURL }}blog" class="link"><p>Cerrar y ver todos los pensamientos</p></a>
+
+  <div class="content">  
+    {{ range .Data.Pages }}
+      {{ .Render "summary" }}
+    {{ end }}  
+  </div>
+</section>
+
+<section class="other-posts">
+  <div class="content">
+    <h2>Otros artículos de #{{ .Data.Term }}</h2>
+    <div>
+      <div class="posts-date">
+        <h3>Por fechas</h3>
+	{{ range $key, $value := .Site.Taxonomies.months }}
+	  {{ range $value }}
+  	    {{ if in .Page.Params.Tags $.Data.Term }}
+	      {{ $.Scratch.Add "tagMonths" (slice $key) }}
+	    {{ end }}
+	  {{end}}
+	{{ end }}	
+	<ul>
+          {{ range first 10 (uniq ($.Scratch.Get "tagMonths")) }}	  
+	  <li><a href="{{ $.Site.BaseURL }}months/{{ . | urlize }}">{{ . }}</a></li>
+	  {{ end }}
+        </ul>
+      </div>
+      <div class="posts-tags">
+        <h3>Tema seleccionado</h3>
+        <ul>
+	  <li>#{{ .Data.Term }}</li>
+        </ul>
+      </div>
+      <div class="posts-author">
+        <h3>Authores de este tema</h3>
+	{{ range $key, $value := .Site.Taxonomies.authors }}
+	  {{ range $value }}
+  	    {{ if in .Page.Params.Tags $.Data.Term }}
+	      {{ $.Scratch.Add "tagAuthors" (slice $key) }}
+	    {{ end }}
+	  {{end}}
+	{{ end }}	
+        <ul>
+	{{ range first 10 (uniq ($.Scratch.Get "tagAuthors")) }}
+	  <li><a href="{{ $.Site.BaseURL }}authors/{{ . | urlize }}"><img src="{{ $.Site.BaseURL }}img/personas/{{ . | urlize }}.jpg">{{ . | humanize }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

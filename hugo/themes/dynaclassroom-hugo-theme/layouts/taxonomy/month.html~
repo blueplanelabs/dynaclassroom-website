@@ -1,0 +1,52 @@
+{{ define "main" }}
+
+<section>
+  <p>Estás viendo los pensamientos escritos en <strong>{{ .Data.Term }}</strong>
+<a href="{{ .Site.BaseURL }}blog" class="link"><p>Cerrar y ver todos los pensamientos</p></a>
+
+  <div class="content">  
+    {{ range .Data.Pages }}
+    {{ .Render "summary" }}
+    {{ end }}  
+  </div>
+</section>
+
+<section class="other-posts">
+  <div class="content">
+    <h2>Otros artículos de {{ $firstName }}</h2>
+    <div>
+      <div class="posts-date">
+        <h3>Por fechas</h3>
+        {{ range $key, $value := .Site.Taxonomies.months }}
+	  {{ range $value }}
+  	    {{ if in .Page.Params.Authors $.Data.Term }}
+	      {{ $.Scratch.Add "userMonths" (slice $key) }}
+	    {{ end }}
+	  {{end}}
+	{{ end }}
+	<ul>
+          {{ range first 10 (uniq ($.Scratch.Get "userMonths")) }}	  
+	  <li><a href="{{ $.Site.BaseURL }}months/{{ . | urlize }}">{{ . }}</a></li>
+	  {{ end }}
+        </ul>
+      </div>
+      <div class="posts-tags">
+        <h3>Otros temas de {{ $firstName }}</h3>
+	{{ range $key, $value := .Site.Taxonomies.tags }}
+	  {{ range $value }}
+  	    {{ if in .Page.Params.Authors $.Data.Term }}
+	      {{ $.Scratch.Add "userTags" (slice $key) }}
+	    {{ end }}
+	  {{end}}
+	{{ end }}
+        <ul>
+	{{ range first 10 (uniq ($.Scratch.Get "userTags")) }}	  
+	  <li><a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">#{{ . }}</a></li>
+        {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

@@ -141,7 +141,7 @@ $(document).ready(function () {
 
         // Crear un nuevo iframe en cada apertura
         let iframe = $('<iframe>', {
-            src: "https://player.vimeo.com/video/1053418095?autoplay=1&loop=0&muted=0&controls=1&dnt=1&title=0&byline=0&portrait=0",
+            src: "https://player.vimeo.com/video/1053418095?autoplay=1&loop=1&muted=0&controls=1&dnt=1&title=0&byline=0&portrait=0",
             frameborder: 0,
             allow: "fullscreen; picture-in-picture; autoplay",
             allowfullscreen: true,

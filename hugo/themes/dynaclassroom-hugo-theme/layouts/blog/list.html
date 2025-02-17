@@ -1,12 +1,42 @@
 {{ define "main" }}
 <section>
-  <div class="content">
-    
-{{ range .RegularPages.ByDate.Reverse }}
+  <div class="content">  
+    {{ range .RegularPages.ByDate.Reverse }}
     {{ .Render "summary" }}
-{{ end }}
-    
+    {{ end }}  
   </div>
 </section>
+<section class="other-posts">
+  <div class="content">
+    <h2>Otros artículos</h2>
+    <div>
+      <div class="posts-date">
+        <h3>Por fechas</h3>
+	<ul>
+          {{ range first 10 .Site.Taxonomies.months.ByCount.Reverse }}
+	  <li><a href="{{ $.Site.BaseURL }}months/{{ .Term | urlize }}">{{ .Term }} <em>( {{ .Count }})</em></a></li>
+	  {{ end }}
+        </ul>
+      </div>
+      <div class="posts-tags">
+        <h3>Por temas</h3>
+        <ul>
+	  {{ range first 10 .Site.Taxonomies.tags.ByCount }}
+	  <li><a href="{{ $.Site.BaseURL }}tags/{{ .Term | urlize }}">#{{ .Term }} <em>( {{ .Count }})</em></a></li>
+	  {{ end }}
+        </ul>
+      </div>
+      <div class="posts-author">
+        <h3>Por autores</h3>
+        <ul>
+          {{ range first 10 .Site.Taxonomies.authors.ByCount }}
+	  <li><a href="{{ $.Site.BaseURL }}authors/{{ .Term | urlize }}"><img src="{{ $.Site.BaseURL }}img/personas/{{ .Term }}.jpg">{{.Term | humanize }} <em>({{ .Count }})</em></a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 {{ end }}

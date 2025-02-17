@@ -12,13 +12,9 @@
   <!-- ==== container ==== -->
   <div class="container">
 
-  {{ if .IsNode }}
-    {{ partial "header" . }}
-  {{ else }}
     {{ partial "header-blog" . }}
-  {{ end }}
   
-  <main {{ if .IsNode }}class="blog-page"{{else}}class="blog-detail-page"{{ end }}>
+    <main class="blog-page">
       {{ block "main" . }}{{ end }}
     </main>
     <a href="#fbody" class="top" title="subir" ><span>Top</span></a>
