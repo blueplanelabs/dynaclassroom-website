@@ -1,8 +1,0 @@
-    <!-- ==== header ==== -->
-    <header class="header-blog-detail">
-        <div class="content">
-    	    <a href="{{ .Site.BaseURL }}blog">
-                <img class="icon-back" src="assets/img/back.svg" alt="">
-            </a>
-        </div>
-	</header>        

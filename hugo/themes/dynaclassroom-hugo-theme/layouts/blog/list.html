@@ -30,7 +30,7 @@
         <h3>Por autores</h3>
         <ul>
           {{ range first 10 .Site.Taxonomies.authors.ByCount }}
-	  <li><a href="{{ $.Site.BaseURL }}authors/{{ .Term | urlize }}"><img src="{{ $.Site.BaseURL }}img/personas/{{ .Term }}.jpg">{{.Term | humanize }} <em>({{ .Count }})</em></a></li>
+	  <li><a href="{{ $.Site.BaseURL }}authors/{{ .Term | urlize }}"><img src="{{ $.Site.BaseURL }}img/personas/{{ .Term }}.jpg">{{.Term | humanize | title }} <em>({{ .Count }})</em></a></li>
           {{ end }}
         </ul>
       </div>

@@ -51,7 +51,7 @@
 	{{ end }}	
         <ul>
 	{{ range first 10 (uniq ($.Scratch.Get "monthAuthors")) }}
-	  <li><a href="{{ $.Site.BaseURL }}authors/{{ . | urlize }}"><img src="{{ $.Site.BaseURL }}img/personas/{{ . | urlize }}.jpg">{{ . | humanize }}</a></li>
+	  <li><a href="{{ $.Site.BaseURL }}authors/{{ . | urlize }}"><img src="{{ $.Site.BaseURL }}img/personas/{{ . | urlize }}.jpg">{{ . | humanize | title }}</a></li>
           {{ end }}
         </ul>
       </div>

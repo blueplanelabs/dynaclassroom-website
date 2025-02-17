@@ -124,7 +124,7 @@ In summary, involving children in the design of learning environments could be a
 
 This publication is part of the project *DynaClassroom* (FAV-010100-2022-30), funded by Ministerio para la Transformación Digital y de la Función Pública.
 
-Project FAV-010100-2022-30 funded by:  {{<figure src="/images/thoughts/MTDFP.jpg" width="25%" alt="logotipo del Ministerio para la Transformación Digital y de la Función Pública.">}}
+Project FAV-010100-2022-30 funded by:  {{<figure src="/img/blog/MTDFP.jpg" width="25%" alt="logotipo del Ministerio para la Transformación Digital y de la Función Pública.">}}
 
 
 ### Picture Credits
