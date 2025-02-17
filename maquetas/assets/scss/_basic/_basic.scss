@@ -5,6 +5,7 @@
 @import "typography";
 @import "ui";
 body{
+	display: none;
 	&.openLB{
 		overflow: hidden;
 	}

@@ -7,8 +7,7 @@
 	{{range $key, $author := .Params.Authors}}
 	{{ $authorFirstname := title (index (split $author "-") 0) }}
 	{{ $authorPhoto := (index $.Params.AuthorPhotos $key) }}
-	<a href="{{ $.Site.BaseURL }}authors/{{ $author }}" class="post-author" title="Todos los posts de {{ $authorFirstname }}"><img src="{{ $.Site.BaseURL }}img/personas/{{ $authorPhoto }}" alt="{{ $author | humanize }}"/></a>
-	<a href="{{ $.Site.BaseURL }}authors/{{ $author }}" title="Todos los posts de {{ $authorFirstname }}">{{ $author | humanize }}</a>
+	<a href="{{ $.Site.BaseURL }}authors/{{ $author }}" class="post-author" title="Todos los posts de {{ $authorFirstname }}"><img src="{{ $.Site.BaseURL }}img/personas/{{ $authorPhoto }}" alt="{{ $author | humanize }}"/> {{ $author | humanize }}</a>
 	{{end}}
       </div>
       <div class="post-date">

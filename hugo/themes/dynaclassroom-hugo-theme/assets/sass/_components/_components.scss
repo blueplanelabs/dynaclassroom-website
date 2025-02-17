@@ -105,3 +105,35 @@
         top: 0;
     }
 }
+table{
+    p + &,
+    + p{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
+th{
+    background-color: $_colorNeutro;
+    font-weight: bold;
+}
+th, td{
+    padding: .5em 1em;
+    border: 1px solid $_colorFilete;
+}
+figure{
+    img{
+        border-radius: $_borderRadius;
+        border: 1em solid $_colorBlanco;
+        box-shadow: 0px 0px 15px 15px rgba(56, 41, 4, 0.10);
+        transform: rotate(2deg);
+    }
+    text-align: center;
+    figcaption,
+    figcaption h4{
+        font-size: .9em;
+        color: $_colorFilete;
+        font-weight: normal;
+        margin-bottom: 1em;
+        font-style: italic;
+    }
+}

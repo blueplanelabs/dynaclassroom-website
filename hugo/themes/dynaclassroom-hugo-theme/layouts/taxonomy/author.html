@@ -4,10 +4,13 @@
 
 
 <section>
-  <p>Estás viendo los pensamientos escritos por <strong>{{ .Data.Term | humanize }}</strong>
-<a href="{{ .Site.BaseURL }}blog" class="link"><p>Cerrar y ver todos los pensamientos</p></a>
-
   <div class="content">  
+    <div class="full-column backTolist">
+      <div>Estás viendo los pensamientos escritos por 
+        <div><strong>{{ .Data.Term | humanize }}</strong></div>
+      </div>
+      <a href="{{ .Site.BaseURL }}blog" class="btn-secondary"> Ver todas </a>
+    </div>
     {{ range .Data.Pages }}
       {{ .Render "summary" }}
     {{ end }}  

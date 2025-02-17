@@ -2,6 +2,11 @@
 
     #open-video{
         cursor: pointer;
+        span{
+            display: inline-block;
+            padding-left: .5em;
+            vertical-align: middle;
+        }
     }
     .video-vimeo {
         display: none;

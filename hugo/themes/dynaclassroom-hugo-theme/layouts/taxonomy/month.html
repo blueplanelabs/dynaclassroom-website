@@ -1,10 +1,14 @@
 {{ define "main" }}
 
 <section>
-  <p>Estás viendo los pensamientos escritos en <strong>{{ .Data.Term }}</strong>
-<a href="{{ .Site.BaseURL }}blog" class="link"><p>Cerrar y ver todos los pensamientos</p></a>
-
+  
   <div class="content">  
+    <div class="full-column backTolist">
+      <div>Publicaciones escritas en
+          <div><strong>{{ .Data.Term }}</strong></div>
+      </div>
+      <a href="{{ .Site.BaseURL }}blog" class="btn-secondary"> ver todas</a>
+    </div>
     {{ range .Data.Pages }}
       {{ .Render "summary" }}
     {{ end }}  
