@@ -6,8 +6,8 @@
 <section>
   <div class="content">  
     <div class="full-column backTolist">
-      <div>Estás viendo los pensamientos escritos por 
-        <div><strong>{{ .Data.Term | humanize }}</strong></div>
+      <div>Estás viendo los posts escritos por 
+        <div><strong>{{ .Data.Term | humanize | title }}</strong></div>
       </div>
       <a href="{{ .Site.BaseURL }}blog" class="btn-secondary"> Ver todas </a>
     </div>
