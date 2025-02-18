@@ -31,3 +31,16 @@ h4,
 	@include respond-to-device(xsm, false) {margin-bottom: $_margin;}
 }
 p { margin-bottom: $_margin; }
+main section .content {
+	ul, ol{
+		margin-left: $_padding;
+		margin-bottom: $_margin;
+	}
+	ul, ol{
+		 li{
+			list-style: initial;
+			list-style-type: inherit;
+		}
+	}
+	
+}

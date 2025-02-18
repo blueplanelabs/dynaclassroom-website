@@ -126,6 +126,7 @@ figure{
         border: 1em solid $_colorBlanco;
         box-shadow: 0px 0px 15px 15px rgba(56, 41, 4, 0.10);
         transform: rotate(2deg);
+        margin: $_padding 0;
     }
     text-align: center;
     figcaption,
