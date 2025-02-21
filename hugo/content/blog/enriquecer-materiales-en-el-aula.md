@@ -82,6 +82,6 @@ Como decía *Seymour Papert* [^1], *los niños empiezan a pensar sobre cómo pen
 
 Como podrás observar, con DynaClassroom el límite es la imaginación. 🚀
 
-### References
+### Referencias
 
 [^1]: Seymour Papert. 1980. Mindstorms: children, computers, and powerful ideas. Basic Books, Inc., USA.
