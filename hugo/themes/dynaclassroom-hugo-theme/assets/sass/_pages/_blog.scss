@@ -214,6 +214,31 @@
             margin: 1em;
         }
     }
+    blockquote{
+        font-style: italic;
+        quotes: '\00AB' '\00BB' '\201E' '\201C';
+        @include respond-to-device(xsm, false) {
+            padding: 1em;
+        }
+        color: $_colorBlockquote;
+        font-size: 1.2em;
+        p:first-child{
+            &::before{
+                content: '\201C';
+                display: inline-block;
+                transform: scale(1.5);
+                padding-right: .5em;
+            }
+        }
+        p:last-child{
+            &::after{
+                content: '\201D';
+                display: inline-block;
+                transform: scale(1.5);
+                padding-left: .3em;
+            }
+        }
+    }
 }
 .other-posts{
     background-color: $_colorCorporativo3;
