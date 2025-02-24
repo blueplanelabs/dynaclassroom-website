@@ -36,7 +36,7 @@ En DynaClassroom, cada página del libro se puede convertir en un **objeto progr
 
 {{<figure class="img-post" src="/img/blog/timeline-global-siglo-xix.jpg" title="Escala temporal mostrada sobre la página del libro y visualizando el periodo correspondiente al siglo XIX">}}
 
-Sin embargo, las posibilidades son ilimitadas: podríamos haber configurado que al mostrar a una página se reproduzca un vídeo, una canción, que cambie el color de fondo de la mesa o que suceda cualquier otra acción que nos pueda ayudar en la explicación.
+Sin embargo, las posibilidades son ilimitadas: podríamos haber configurado que al mostrar una página se reproduzca un vídeo, una canción, que cambie el color de fondo de la mesa o que suceda cualquier otra acción que nos pueda ayudar en la explicación.
 
 ### Tarjetas con contenidos adicionales
 
@@ -58,7 +58,7 @@ Cuando una tarjeta se muestra en su período correspondiente, entonces sí se ej
 
 {{<figure class="img-post" src="/img/blog/tarjeta-mozart.jpg" title="Ejemplo de tarjeta de contenido adicional que reproduce el sonido de una sinfonía de Mozart">}}
 
-* **Preguntas interactivas**: Se pueden incluir también tarjetas con preguntas sobre el contenido del libro para los que los niños se planteen las posibles opciones y después desvelar la respuesta utilizandocualquiera de los tipos de medios anteriores.
+* **Preguntas interactivas**: Se pueden incluir también tarjetas con preguntas sobre el contenido del libro para los que los niños se planteen las posibles opciones y después desvelar la respuesta utilizando cualquiera de los tipos de medios anteriores.
 
 {{<figure class="img-post" src="/img/blog/tarjeta-pregunta.jpg" title="Ejemplo de pregunta sobre el contenido (\"¿De qué material está construida la Torre Eiffel?\") y la tarjeta de respuesta, que en este caso emplea un contenido de tipo imágen para mostrar la solución.">}}
 
