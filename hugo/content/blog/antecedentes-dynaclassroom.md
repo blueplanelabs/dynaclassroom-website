@@ -7,7 +7,7 @@ authors = [ "rafael-luque" ]
 authorPhotos = [ "rafael-luque.jpg" ]
 draft = "false"
 tags = [ "estado-del-arte", "constructivismo", "TUI", "embodied-spatial-programming" ]
-summary = "Este post repasa brevemente las principales teorías, investigaciones y proyectos que han inspirado DynaClassroom."
+summary = "Este post repasa brevemente las principales teorías, investigaciones y proyectos que inspiran nuestro trabajo en DynaClassroom."
 background = "niños-smalltalk.png"
 backgroundSummary = "niños-smalltalk.png"
 +++
@@ -22,7 +22,7 @@ Sin embargo, los medios digitales en educación suelen usarse como mero soporte 
 
 Afortunadamente, no somos los primeros ni los únicos en realizar este diagnóstico, sino que nuestro trabajo se enmarca en una larga lista de antecedentes, tanto teóricos como técnicos, que nos sirvieron de gran inspiración en el diseño de este nuevo medio de expresión y aprendizaje que denominamos *DynaClassroom*.
 
-Este post repasa brevemente los principales proyectos e investigaciones que han influido en nuestro proyecto.
+Este post repasa brevemente las principales teorías, investigaciones y proyectos que han inspiran nuestro trabajo en DynaClassroom.
 
 ### Modelos mentales espaciales
 
