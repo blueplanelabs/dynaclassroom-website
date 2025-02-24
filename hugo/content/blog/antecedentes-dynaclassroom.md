@@ -43,9 +43,9 @@ Cuando subimos las escaleras, no nos detenemos a calcular cuánto tenemos que mo
 
 La evolución humana nos demuestra cómo nos hemos beneficiado de estos modelos espaciales básicos para construir interfaces mejoradas. Tomemos un ejemplo tan antiguo que su origen exacto aún se desconoce; el ábaco. El ábaco es una herramienta desarrollada para cálculos matemáticos prácticos.
 
-El ábaco tiene una interfaz física y espacial. Desliza hacia un lado para sumar y hacia el otro para restar. Sumar y restar son dos constructos matemáticos que los humanos encontraron abstractos y difíciles de escalar sin una representación física concreta. La solución para aprender y manejar ágilmente estos difíciles constructos matemáticos terminó siendo una interfaz que hacía uso de los modelos espaciales disponibles en nuestro cerebro. La solución fue encontrar una manera de usar nuestra noción espacial de la posición de un objeto para representar y operar con la abstracción matemática.
-
 {{<figure class="img-right" src="/img/blog/abaco.jpg" title="Un ábaco moderno.">}}
+
+El ábaco tiene una interfaz física y espacial. Desliza hacia un lado para sumar y hacia el otro para restar. Sumar y restar son dos constructos matemáticos que los humanos encontraron abstractos y difíciles de escalar sin una representación física concreta. La solución para aprender y manejar ágilmente estos difíciles constructos matemáticos terminó siendo una interfaz que hacía uso de los modelos espaciales disponibles en nuestro cerebro. La solución fue encontrar una manera de usar nuestra noción espacial de la posición de un objeto para representar y operar con la abstracción matemática.
 
 Hemos utilizado estas técnicas durante años y hoy en día dependemos aún más de ellas. Un ejemplo por excelencia de esto es la Interfaz de Usuario Gŕafica o GUI, por sus siglas en inglés. Las Interfaces de Usuario Gŕaficas se introdujeron como una forma de simplificar la pronunciada curva de aprendizaje de las interfaces de línea de órdenes (CLI). En 1945, *Vannevar Bush* publicó un ensayo que tituló *"As We May Think"* [^3], hablando sobre el problema de los sistemas actuales de selección y bases de datos. Destacó el hecho de que la mente humana funciona según la asociación, no de acuerdo con sistemas alfabéticos o numéricos. Este ensayo temprano inspiró la creación de *SketchPad* [^4] en 1963 por *Ivan Sutherland*, uno de los programas de ordenador más influyentes de la historia, que se considera el primer programa informático que permitió la manipulación directa de objetos gráficos, pionero en la interacción persona-ordenador y predecesor de los programas de diseño asistido por ordenador (CAD).
 
@@ -81,7 +81,7 @@ Se podría argumentar que los niños son capaces de adaptarse más rápido a est
 
 Los modelos de interacción a los que nos estamos moviendo no hacen uso de los dominios espaciales que nuestra mente domina durante la infancia. Esto no significa que no debamos usar estos modelos de interacción, pero creemos que nos podríamos beneficiar mucho de encontrar una manera de aprovechar estos dominios espaciales e integrarlos en un nuevo medio digital.
 
-## Programación Espacial Corpórea
+### Programación Espacial Corpórea
 
 Nuestra tesis es que utilizando el espacio como estructura subyacente y los modelos mentales espaciales como bloques de construcción, podemos diseñar un nuevo entorno para la alfabetización digital que también actúe como plataforma de autoría. Este nuevo medio digital ofrece un entorno perfecto para aprender conceptos de pensamiento computacional mientras se utiliza el medio para construir de forma colaborativa en el espacio.
 
@@ -105,15 +105,15 @@ La idea es tener un paradigma de programación que se adapte a la naturaleza del
 
 {{<figure class="img-post" src="/img/blog/niños-tortuga-logo.png" title="Niños manipulando el robot torguta de LOGO.">}}
 
-## Aprendizaje Experiencial y Pensamiento Computacional
+### Aprendizaje Experiencial y Pensamiento Computacional
 
 El currículo educativo ha evolucionado durante las últimas décadas hacia metodologías de aprendizaje basadas en la práctica y enfoques de aprendizaje experiencial. Diferentes teorías psicológicas han intentado encontrar medios adecuados para mejorar el desarrollo cognitivo de los niños considerando diferentes etapas de madurez y niveles. La tecnología ha jugado un papel clave en esta evolución, dando lugar a un conjunto de buenas prácticas que aprovechan el medio computacional, pero también a un vasto número de metodologías que carecen de algunos de los ingredientes esenciales para el desarrollo cognitivo adecuado de los niños. Vale la pena revisar todas estas teorías y enfoques para diseñar interfaces mejoradas que puedan ayudar a avanzar en el currículo educativo.
 
-### Hacia una teoría constructivista del aprendizaje
+#### Hacia una teoría constructivista del aprendizaje
 
 Para construir un marco para un entorno de aprendizaje, es necesario comprender completamente todos los factores, contextos y procesos que afectarán a un niño durante el curso de sus ciclos de desarrollo cognitivo. Existe un amplio cuerpo de trabajo que explora los procesos mentales del desarrollo de un niño. Unos se basan en el trabajo de *Jean Piaget*, el padre del constructivismo, otros se centraron en enfoques más prácticos como las teorías constructivistas de *Seymour Papert* o los enfoques de aprendizaje creativo de *Mitchel Resnick*. Vale la pena revisar todas estas teorías para poder diseñar sistemas adecuados fundamentados en la psicología humana desde la base.
 
-#### Teoría del desarrollo cognitivo de Piaget
+##### Teoría del desarrollo cognitivo de Piaget
 
 Jean Piaget [^7] es considerado uno de los principales pioneros del constructivismo en el campo de la psicología. Introdujo su teoría del desarrollo cognitivo basada en la idea de que el proceso de desarrollo se conforma por un ciclo de etapas. Estas etapas se basan en la experiencia y la experimentación con acciones, y se construyen una tras otra en cada ciclo. Afirmaba que los niños tenían un papel activo en el proceso de aprendizaje y que, a través de la experimentación y el juego, construían sobre el conocimiento que ya habían adquirido.
 
@@ -128,7 +128,7 @@ En la primera etapa "sensoriomotora", el niño necesita estar en contacto con su
 
 Años después, los investigadores comenzarían a darse cuenta de que estas etapas no deberían tratarse como secuenciales, sino más bien como eventos paralelos y continuos. La adquisición de habilidades sensoriomotoras y los principios del desarrollo cognitivo se presentaban como eventos que deberían estar entrelazados para potenciar los procesos de aprendizaje.
 
-#### El construccionismo de Seymour Papert
+##### El construccionismo de Seymour Papert
 
 Siguiendo las teorías del constructivismo de Jean Piaget, Seymour Papert desarrolló lo que él llamó construccionismo. El construccionismo es una ramificación del constructivismo y se basa en la idea de que los niños aprenden creando modelos mentales en sus cerebros a partir de la experiencia y la acción. El aprendizaje por descubrimiento es clave y se construye sobre el conocimiento previamente adquirido. Papert fue un gran defensor del aprendizaje basado en proyectos. Fue matemático, informático y educador, y uno de los pioneros de la inteligencia artificial. Pasó la mayor parte de su carrera trabajando en teorías de aprendizaje y utilizó las nuevas tecnologías como un campo de juego para los métodos de aprendizaje constructionistas.
 
@@ -140,7 +140,7 @@ Papert defendía firmemente el uso del computador en el aula. El construccionism
 
 {{<figure class="img-post" src="/img/blog/tortuga-valiant.png" title="Niños controlando la tortuga Valiant a través del lenguaje de programación LOGO de Seymour Papert.">}}
 
-#### Aprendizaje a través del juego
+##### Aprendizaje a través del juego
 
 Mitchel Resnick, profesor del MIT Media Lab, inicia su libro *"Lifelong Kindergarten"* [^12] con el ejemplo de *Chen Jining*, el presidente de la Universidad de Tsinghua, la principal universidad de ingeniería en China. Explica cómo Chen Jining estaba preocupado porque los estudiantes chinos, a pesar de tener altos estándares y buenas calificaciones, no estaban realmente preparados para las necesidades de nuestra sociedad constantemente cambiante y evolutiva. Los estudiantes conocían la teoría, sabían cómo resolver problemas matemáticos, pero no tenían la capacidad de pensar creativamente, de formular sus propias preguntas, plantear sus propias inquietudes y resolverlas. Resnick, influenciado por las teorías constructivistas de Papert, habla de la necesidad de forjar una nueva generación de estudiantes que sean curiosos, que piensen más allá y que puedan formular nuevos desafíos basados en el conocimiento que adquieren. Para preparar a los estudiantes para este futuro en constante cambio, **necesitamos moldear pensadores creativos**.
 
@@ -152,7 +152,33 @@ En el grupo Lifelong Kindergarten, Resnick ha desarrollado un marco para el pens
 
 {{<figure class="img-post" src="/img/blog/4-Ps.png" title="Las 4 P's del aprendizaje creativo, según Resnick.">}}
 
+#### Pensamiento Computacional
 
+##### Más allá de Papert
+
+Logo[^6] fue el primer lenguaje de programación creado para enseñar conceptos de Pensamiento Computacional. Desde su creación, se han desarrollado numerosas otras plataformas y lenguajes de programación con el mismo objetivo ([^10]). Algunas de estas plataformas se inspiran en el enfoque de aprendizaje constructivista de Papert, como Scratch [^11], un lenguaje de programación gratuito y una comunidad en línea donde los usuarios pueden crear sus propias historias interactivas, juegos y animaciones.
+
+Scratch y muchas otras plataformas hacen uso de la programación visual. Alice [^13], AgentSheets [^14], MIT App Inventor [^15], CS Unplugged [^16] o LEGO Mindstorms [^17] son sólo algunas de las plataformas enfocadas en enseñar programación a niños usando conceptos de pensamiento computacional.
+
+{{<figure class="img-post" src="/img/blog/plataformas-educativas.png" title="Algunas plataformas educativas de pensamiento computacional.">}}
+
+Igualmente, durante las últimas décadas, varios estudios de investigación y expertos han afirmado que el pensamiento computacional es esencial para el desarrollo de los niños. Desde que Papert introdujo el término, la comunidad investigadora ha estado impulsando la inclusión del pensamiento computacional en el currículo educativo. Sin embargo, aunque se ha trabajado mucho en muchos contextos educativos diferentes alrededor del mundo, el trabajo relacionado con el pensamiento computacional incorporado en el aula todavía está en sus inicios.
+
+La razón principal radica en que necesitamos que los niños interactúen y jueguen con su entorno. Y tenerlos frente a una pantalla escribiendo líneas de código no es lo ideal para su propio desarrollo. La gran mayoría de estas herramientas educativas se desarrollan en entornos 2D donde el niño interactúa solo con una pantalla y no aprovecha el espacio a su alrededor. Otros, como LEGO Mindstorms, se basan en robótica y mecanismos y la programación se ve limitada por las capacidades físicas inherentes a los mismos.
+
+Existen muchos caminos abiertos y oportunidades para explorar y también mucho espacio para mejorar en el ámbito educativo. El Pensamiento Computacional conforma un marco que no solo es bueno para aprender sobre el medio informático, sino que pensamos que también debería convertirse en una infraestructura sólida para el aprendizaje en otras muchas áreas del conocimiento como Matemáticas, Física, Historia, Literatura, Música, etc.
+
+##### Aprendizaje empleando pensamiento computacional
+
+El Pensamiento Computacional es mucho más que saber cómo programar. El pensamiento computacional es una forma de entender e interactuar con el mundo. Pensar computacionalmente no significa "pensar como una máquina", de la misma manera que aprender sobre programación no significa solo aprender a codificar. Como dice *Bret Victor* [^18]:
+
+>Una persona no es una máquina, y no debería ser obligada a pensar como una". Aprender sobre programación significa ser capaz de entender ciertas construcciones de código que potenciarán nuestra forma de abordar un problema y encontrar una solución. Como ya hemos mencionado, Papert puso mucho esfuerzo en desarrollar Logo, un lenguaje de programación destinado a fines educativos y enfocado en aprender sobre programación. Varios otros pioneros en el campo han presentado otras plataformas y lenguajes, así como investigaciones relevantes sobre el tema de aprender sobre programación.
+
+Uno de los ejemplos más notables fue desarrollado por *Alan Kay*, un científico de la computación que ha dedicado gran parte de su vida al desarrollo de tecnología educativa. Kay diseñó el concepto de *Dynabook*, en 1968 (llamado *The KiddiComp* en ese entonces), como "una computadora personal para niños de todas las edades" [^19]. El concepto de Dynabook fue concebido mucho antes de que se lanzara la primera tableta al mercado. También desarrolló varios lenguajes de programación y plataformas educativas como Etoys [^10]. Etoys es un entorno de autoría y sistema de programación visual para niños construido en Squeak, una implementación de código abierto de Smalltalk. Etoys sirvió como inspiración para el desarrollo de Scratch más adelante. Kay no concibió Squeak y Etoys como herramientas para aprender a codificar. Los diseñó como plataformas con un propósito mayor; plataformas para aprender sobre programación como un paraguas para la asimilación de muchas otras áreas temáticas como la física o las matemáticas.
+
+Es evidente que el estudiante no solo aprende sobre programación, sino que explora y experimenta con una amplia gama de conceptos y competencias transversales como la física, las matemáticas, la escritura o la documentación. Kay ha realizado un trabajo sustancial en el área de la programación visual e interactiva. Creó Smalltalk [^9] como un lenguaje de programación educativo que era orientado a objetos, de tipado dinámico y reflexivo.
+
+{{<figure class="img-post" src="/img/blog/niños-smalltalk.png" title="Un grupo de niños usando Smalltalk en una computadora Xerox Alto en los años 80.">}}
 
 ### Referencias
 
@@ -162,9 +188,16 @@ En el grupo Lifelong Kindergarten, Resnick ha desarrollado un marco para el pens
 [^4]: I. E. Sutherland. **SketchPad: A man-machine graphical communication system**. AFIPS Conference Proceedings 23, 1963, 323–328.
 [^5]: Anna Fusté. 2018. **Hypercubes: Learning Computational Thinking Through Embodied Spatial Programming in Augmented Reality**. Massachusetts Institute of Technology.
 [^6]: Seymour Papert. 1980. **Mindstorms: Children, Computers, And Powerful Ideas**.
-[^7]:
-[^8]:
-[^9]:
-[^10]:
-[^11]:
-[^12]:
+[^7]: Piaget, Jean. 1971. **The theory of stages in cognitive development**. In D. R. Green, M. P. Ford, & G. B. Flamer, Measurement and Piaget. McGraw-Hill.
+[^8]: Papert, Seymour. 1986. **Constructionism: A New Opportunity for Elementary Science Education**. A Proposal to the National Science Foundation, Massachusetts Institute of Technology, Media Laboratory, Epistemology and Learning Group, Cambridge, Massachusetts.
+[^9]: Kay, Alan. 1996. **The early history of Smalltalk**. In T. J. Bergin Jr, & R. G. Gibson Jr., History of programming languages---II (pp. 511-598). New York: ACM.
+[^10]: Kay, Alan. 2005. **Squeak Etoys, Children & Learning**. Glendale: Viewpoints Research Institute (VPRI).
+[^11]: Resnick, M., Maloney, J., Monroy-Hern~ndez, A., Rusk, N., Eastmond, E., Brennan, K., et al. (2009). **Scratch: programming for all**. Communications of the ACM. 52, pp. 60-67. New York: ACM.
+[^12]: Resnick, Mitchel. 2017. **Lifelong kindergarten: cultivating creativity through projects, passion, peers, and play**. The MIT Press, Cambridge, Massachusetts.
+[^13]: Cooper, S., Dann, W., & Pausch, R. 2000. **Alice: a 3-D tool for introductory programming concepts**. Journal of Computing Sciences in Colleges, 15 (5), 107-116.
+[^14]: Repenning, A. 1993. **Agentsheets: a tool for building domain-oriented visual programming environments**. Proceedings of the INTERACT'93 and CHI'93 conference on Human factors in computing systems (pp. 142-143). Amsterdam: ACM.
+[^15]: Pokress, S. C., & Dominguez Veiga, J. J. 2013. **MIT App Inventor: Enabling personal mobile computing**. arXiv:1310.2830.
+[^16]: Bell, T., Alexander, J., Freeman, I., & Grimley, M. (2009). **Computer science unplugged: School students doing real computing without computers**. The New Zealand Journal of Applied Computing and Information Technology, 13 (1), 20-29.
+[^17]: Klassner, F., & Anderson, S. D. (2003). **Lego MindStorms: Not just for K-12 anymore*. IEEE Robotics & Automation Magazine, 10 (2), pp. 12-18.
+[^18]: Victor, Bret. 2012. **Learnable programming**. Del sitio web de Bret Victor: http://worrydream.com/#!/LearnableProgramming
+[^19]: Kay, Alan. 2011. **A Personal Computer for Children of All Ages**. In Proceedings of the ACM Annual Conference - Volume 1 (ACM ’72).
