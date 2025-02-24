@@ -7,7 +7,7 @@ authors = [ "rafael-luque" ]
 authorPhotos = [ "rafael-luque.jpg" ]
 draft = "false"
 tags = [ "estado-del-arte", "constructivismo", "TUI", "embodied-spatial-programming" ]
-summary = ""
+summary = "Este post repasa brevemente las principales teorías, investigaciones y proyectos que han inspirado DynaClassroom."
 background = "niños-smalltalk.png"
 backgroundSummary = "niños-smalltalk.png"
 +++
