@@ -120,6 +120,13 @@
         padding: 0;
         margin: 0;
         background-color: $_colorCorporativo4-light;
+        .content{
+            max-width: 50em;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: $_padding;
+            padding-right: $_padding;
+        }
         ul{
             display: flex;
             gap: .5em;
