@@ -123,3 +123,5 @@ th, td{
 sup {
     vertical-align: super;
 }
+strong {
+    
