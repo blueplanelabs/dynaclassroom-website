@@ -8,8 +8,8 @@ authorPhotos = [ "rafael-luque.jpg" ]
 draft = "false"
 tags = [ "estado-del-arte", "constructivismo", "TUI", "embodied-spatial-programming" ]
 summary = ""
-background = "caso-de-uso-libro-extendido.jpg"
-backgroundSummary = "caso-de-uso-libro-extendido.jpg"
+background = "niños-smalltalk.png"
+backgroundSummary = "niños-smalltalk.png"
 +++
 
 Las tecnologías digitales en la educación deberían cambiar el modo en que se enseña y, en particular, los ordenadores deberían ser herramientas para amplificar la capacidad de los estudiantes.
