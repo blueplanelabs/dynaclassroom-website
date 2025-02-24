@@ -105,15 +105,12 @@ La idea es tener un paradigma de programación que se adapte a la naturaleza del
 
 {{<figure class="img-post" src="/img/blog/niños-tortuga-logo.png" title="Niños manipulando el robot torguta de LOGO.">}}
 
-### Aprendizaje Experiencial y Pensamiento Computacional
 
-El currículo educativo ha evolucionado durante las últimas décadas hacia metodologías de aprendizaje basadas en la práctica y enfoques de aprendizaje experiencial. Diferentes teorías psicológicas han intentado encontrar medios adecuados para mejorar el desarrollo cognitivo de los niños considerando diferentes etapas de madurez y niveles. La tecnología ha jugado un papel clave en esta evolución, dando lugar a un conjunto de buenas prácticas que aprovechan el medio computacional, pero también a un vasto número de metodologías que carecen de algunos de los ingredientes esenciales para el desarrollo cognitivo adecuado de los niños. Vale la pena revisar todas estas teorías y enfoques para diseñar interfaces mejoradas que puedan ayudar a avanzar en el currículo educativo.
-
-#### Hacia una teoría constructivista del aprendizaje
+### Hacia una teoría constructivista del aprendizaje
 
 Para construir un marco para un entorno de aprendizaje, es necesario comprender completamente todos los factores, contextos y procesos que afectarán a un niño durante el curso de sus ciclos de desarrollo cognitivo. Existe un amplio cuerpo de trabajo que explora los procesos mentales del desarrollo de un niño. Unos se basan en el trabajo de *Jean Piaget*, el padre del constructivismo, otros se centraron en enfoques más prácticos como las teorías constructivistas de *Seymour Papert* o los enfoques de aprendizaje creativo de *Mitchel Resnick*. Vale la pena revisar todas estas teorías para poder diseñar sistemas adecuados fundamentados en la psicología humana desde la base.
 
-##### Teoría del desarrollo cognitivo de Piaget
+#### Teoría del desarrollo cognitivo de Piaget
 
 Jean Piaget [^7] es considerado uno de los principales pioneros del constructivismo en el campo de la psicología. Introdujo su teoría del desarrollo cognitivo basada en la idea de que el proceso de desarrollo se conforma por un ciclo de etapas. Estas etapas se basan en la experiencia y la experimentación con acciones, y se construyen una tras otra en cada ciclo. Afirmaba que los niños tenían un papel activo en el proceso de aprendizaje y que, a través de la experimentación y el juego, construían sobre el conocimiento que ya habían adquirido.
 
@@ -128,7 +125,7 @@ En la primera etapa "sensoriomotora", el niño necesita estar en contacto con su
 
 Años después, los investigadores comenzarían a darse cuenta de que estas etapas no deberían tratarse como secuenciales, sino más bien como eventos paralelos y continuos. La adquisición de habilidades sensoriomotoras y los principios del desarrollo cognitivo se presentaban como eventos que deberían estar entrelazados para potenciar los procesos de aprendizaje.
 
-##### El construccionismo de Seymour Papert
+#### El construccionismo de Seymour Papert
 
 Siguiendo las teorías del constructivismo de Jean Piaget, Seymour Papert desarrolló lo que él llamó construccionismo. El construccionismo es una ramificación del constructivismo y se basa en la idea de que los niños aprenden creando modelos mentales en sus cerebros a partir de la experiencia y la acción. El aprendizaje por descubrimiento es clave y se construye sobre el conocimiento previamente adquirido. Papert fue un gran defensor del aprendizaje basado en proyectos. Fue matemático, informático y educador, y uno de los pioneros de la inteligencia artificial. Pasó la mayor parte de su carrera trabajando en teorías de aprendizaje y utilizó las nuevas tecnologías como un campo de juego para los métodos de aprendizaje constructionistas.
 
@@ -140,7 +137,7 @@ Papert defendía firmemente el uso del computador en el aula. El construccionism
 
 {{<figure class="img-post" src="/img/blog/tortuga-valiant.png" title="Niños controlando la tortuga Valiant a través del lenguaje de programación LOGO de Seymour Papert.">}}
 
-##### Aprendizaje a través del juego
+#### Aprendizaje a través del juego
 
 Mitchel Resnick, profesor del MIT Media Lab, inicia su libro *"Lifelong Kindergarten"* [^12] con el ejemplo de *Chen Jining*, el presidente de la Universidad de Tsinghua, la principal universidad de ingeniería en China. Explica cómo Chen Jining estaba preocupado porque los estudiantes chinos, a pesar de tener altos estándares y buenas calificaciones, no estaban realmente preparados para las necesidades de nuestra sociedad constantemente cambiante y evolutiva. Los estudiantes conocían la teoría, sabían cómo resolver problemas matemáticos, pero no tenían la capacidad de pensar creativamente, de formular sus propias preguntas, plantear sus propias inquietudes y resolverlas. Resnick, influenciado por las teorías constructivistas de Papert, habla de la necesidad de forjar una nueva generación de estudiantes que sean curiosos, que piensen más allá y que puedan formular nuevos desafíos basados en el conocimiento que adquieren. Para preparar a los estudiantes para este futuro en constante cambio, **necesitamos moldear pensadores creativos**.
 
@@ -152,9 +149,9 @@ En el grupo Lifelong Kindergarten, Resnick ha desarrollado un marco para el pens
 
 {{<figure class="img-post" src="/img/blog/4-Ps.png" title="Las 4 P's del aprendizaje creativo, según Resnick.">}}
 
-#### Pensamiento Computacional
+### Pensamiento Computacional
 
-##### Más allá de Papert
+#### Más allá de Papert
 
 Logo[^6] fue el primer lenguaje de programación creado para enseñar conceptos de Pensamiento Computacional. Desde su creación, se han desarrollado numerosas otras plataformas y lenguajes de programación con el mismo objetivo ([^10]). Algunas de estas plataformas se inspiran en el enfoque de aprendizaje constructivista de Papert, como Scratch [^11], un lenguaje de programación gratuito y una comunidad en línea donde los usuarios pueden crear sus propias historias interactivas, juegos y animaciones.
 
@@ -168,17 +165,90 @@ La razón principal radica en que necesitamos que los niños interactúen y jueg
 
 Existen muchos caminos abiertos y oportunidades para explorar y también mucho espacio para mejorar en el ámbito educativo. El Pensamiento Computacional conforma un marco que no solo es bueno para aprender sobre el medio informático, sino que pensamos que también debería convertirse en una infraestructura sólida para el aprendizaje en otras muchas áreas del conocimiento como Matemáticas, Física, Historia, Literatura, Música, etc.
 
-##### Aprendizaje empleando pensamiento computacional
+#### Aprendizaje empleando pensamiento computacional
 
 El Pensamiento Computacional es mucho más que saber cómo programar. El pensamiento computacional es una forma de entender e interactuar con el mundo. Pensar computacionalmente no significa "pensar como una máquina", de la misma manera que aprender sobre programación no significa solo aprender a codificar. Como dice *Bret Victor* [^18]:
 
->Una persona no es una máquina, y no debería ser obligada a pensar como una". Aprender sobre programación significa ser capaz de entender ciertas construcciones de código que potenciarán nuestra forma de abordar un problema y encontrar una solución. Como ya hemos mencionado, Papert puso mucho esfuerzo en desarrollar Logo, un lenguaje de programación destinado a fines educativos y enfocado en aprender sobre programación. Varios otros pioneros en el campo han presentado otras plataformas y lenguajes, así como investigaciones relevantes sobre el tema de aprender sobre programación.
+>Una persona no es una máquina, y no debería ser obligada a pensar como una.
+
+Aprender sobre programación significa ser capaz de entender ciertas construcciones de código que potenciarán nuestra forma de abordar un problema y encontrar una solución. Como ya hemos mencionado, Papert puso mucho esfuerzo en desarrollar Logo, un lenguaje de programación destinado a fines educativos y enfocado en aprender sobre programación. Varios otros pioneros en el campo han presentado otras plataformas y lenguajes, así como investigaciones relevantes sobre el tema de aprender sobre programación.
 
 Uno de los ejemplos más notables fue desarrollado por *Alan Kay*, un científico de la computación que ha dedicado gran parte de su vida al desarrollo de tecnología educativa. Kay diseñó el concepto de *Dynabook*, en 1968 (llamado *The KiddiComp* en ese entonces), como "una computadora personal para niños de todas las edades" [^19]. El concepto de Dynabook fue concebido mucho antes de que se lanzara la primera tableta al mercado. También desarrolló varios lenguajes de programación y plataformas educativas como Etoys [^10]. Etoys es un entorno de autoría y sistema de programación visual para niños construido en Squeak, una implementación de código abierto de Smalltalk. Etoys sirvió como inspiración para el desarrollo de Scratch más adelante. Kay no concibió Squeak y Etoys como herramientas para aprender a codificar. Los diseñó como plataformas con un propósito mayor; plataformas para aprender sobre programación como un paraguas para la asimilación de muchas otras áreas temáticas como la física o las matemáticas.
 
 Es evidente que el estudiante no solo aprende sobre programación, sino que explora y experimenta con una amplia gama de conceptos y competencias transversales como la física, las matemáticas, la escritura o la documentación. Kay ha realizado un trabajo sustancial en el área de la programación visual e interactiva. Creó Smalltalk [^9] como un lenguaje de programación educativo que era orientado a objetos, de tipado dinámico y reflexivo.
 
 {{<figure class="img-post" src="/img/blog/niños-smalltalk.png" title="Un grupo de niños usando Smalltalk en una computadora Xerox Alto en los años 80.">}}
+
+### Espacio y Tangibilidad
+
+#### Programación Visual
+
+La comunidad investigadora ha puesto énfasis en la importancia del espacio y la corporeidad utilizados en metodologías educativas para campos STEM. El cuerpo y la relación con el entorno no solo son esenciales para el desarrollo de habilidades motrices, sino que también pueden beneficiar enormemente la comprensión de conceptos más abstractos como las matemáticas o la física. Nosotros, los humanos, existimos en un mundo tridimensional y nuestro cerebro toma este entorno 3D como referencia. Esta referencia ha servido en el pasado y se ha considerado como un poderoso conducto para enseñar conceptos de ciencia y tecnología a los niños. La utilización de principios espaciales para hacer una interfaz más usable e intuitiva (e instintiva) no es algo nuevo en los sistemas tecnológicos. Esta idea se ha aplicado a interfaces de computadora desde el inicio de la era de la computación. La información y conciencia espacial se ha utilizado como herramienta para diseñar interfaces mejor adaptadas a nuestra naturaleza humana.
+
+Uno de los ejemplos claros de esto es la programación visual. La programación visual es un paradigma de programación poderoso y prevalente que ha estado evolucionando desde los años 60. Utiliza referencias visuales y bloques organizados en un espacio 2D para programar una secuencia regular de órdenes. La programación visual es el primer paradigma de programación que aprovechó nuestros esquemas mentales espaciales para diseñar una mejor interfaz para una tarea secuencial. La primera interfaz de programación visual fue creada en 1968. En aquel entonces, *Tom Ellis* creó *GRAIL* [^20], *GRAphical Input Language*, donde los usuarios dibujaban diagramas de flujo para escribir software.
+
+{{<figure class="img-post" src="/img/blog/grail.png" title="Tom Ellis usando una tableta para interactuar con GRAIL en los años 60.">}}
+
+Desde entonces, se han desarrollado muchas otras plataformas y entornos de programación, especialmente para aprender sobre programación utilizando principios espaciales. Un ejemplo de esto es AgentSheets [^14], un sistema de programación visual orientado a dominios; VVVV [^21], una plataforma de programación basada en nodos para programar gráficos; o el Reality Editor [^22], una herramienta para programar objetos inteligentes en Realidad Aumentada.
+
+#### Trabajar con Imágenes crea Símbolos
+
+Alan Kay trabajó en la aplicación de los principios de la programación visual en entornos de aprendizaje para niños. Inspirado por las teorías de Seymour Papert y Jean Piaget, Kay intentó comprender cómo la noción espacial era esencial al abstraer de la realidad y al intentar pensar en el medio computacional.
+
+Si miramos atrás a las teorías del desarrollo cognitivo de Piaget, éste explicó cómo existen diferentes etapas en el desarrollo de un niño. Una primera etapa sensoriomotora donde el niño necesita estar en contacto con su entorno físico; una etapa más avanzada donde el niño puede reconocer patrones; y las etapas finales donde el niño puede manejar símbolos y pensar de manera abstracta. Años después, los investigadores comenzaron a darse cuenta de que estas etapas no deberían tratarse como secuenciales, sino más bien como eventos paralelos y continuos.
+
+Para hacer un símil con las teorías de Piaget, Alan Kay habló sobre la idea de que *"Trabajar con Imágenes crea Símbolos"* [^23]. Como se mencionó anteriormente, Kay es un científico de la computación y es bien conocido por su trabajo en lenguajes de programación visual. Intentó explicar cómo el proceso de aprendizaje se volvería mucho más rico si combináramos todas las etapas de aprendizaje de Piaget. Si los niños pudieran hacer uso del espacio y la fisicalidad de su entorno mientras reconocen patrones y entienden símbolos, el proceso de aprendizaje sería mucho más rico y rápido.
+
+{{<figure class="img-post" src="/img/blog/doing-with-images-makes-symbols.png" title="\"Trabajar con Imágenes Crea Símbolos\" de Alan Kay (imagen de Anna Fusté).">}}
+
+#### Interfaces de Usuario Tangibles
+
+En paralelo a todas las teorías relacionadas con el razonamiento espacial y el desarrollo cognitivo, ha habido muchas investigaciones intentando crear experiencias de aprendizaje que potencien cada una de las etapas de desarrollo piagetianas por separado. Sin embargo, no se ha hecho mucho esfuerzo en intentar combinarlas todas para el aprendizaje. Los enfoques actuales para enseñar pensamiento computacional y programación están basados en pantallas. No obstante, somos criaturas físicas. Como menciona Bret Victor [^24]:
+
+>Vivimos en un mundo tridimensional. Nuestras manos están diseñadas para mover y rotar objetos en tres dimensiones, para recoger objetos y colocarlos sobre, bajo, al lado y dentro de otros. Ninguna criatura en la tierra tiene una destreza que se compare con la nuestra.
+
+Piaget también abogaba por introducir interacciones físicas al diseñar métodos educativos. Destacó la importancia de las acciones físicas hacia los objetos para abstraer de la realidad:
+
+>...hay acciones individuales como lanzar, empujar, tocar, frotar. Son estas acciones individuales las que la mayoría de las veces dan lugar a la abstracción de los objetos.
+
+{{<figure class="img-right" src="/img/blog/metadesk.png" title="Sistema metaDESK.">}}
+
+Siguiendo estos mismos principios, se crearon las Interfaces de Usuario Agarrables. Hoy en día se les llama *Interfaces de Usuario Tangibles* (TUIs) y se basan en la manipulación de tokens físicos en el espacio para controlar una interfaz digital. En 1997 en el MIT Media Lab, *Hiroshi Ishii* y *Brygg Ullmer* [^25] publicaron un artículo donde hablaban sobre la conexión entre bits y átomos. Este artículo se centró en la unión entre el ciberespacio y el entorno físico. Ishii y Ullmer señalaron que habíamos pasado de usar objetos físicos para medir eventos en el mundo, a usar solo computadoras y pantallas como herramientas únicas de medición. En este artículo, Ishii y Ullmer intentaron expresar su voluntad de unificar la riqueza del mundo físico con la interacción humano-computadora. Las Interfaces de Usuario Tangibles son una respuesta a esta necesidad. Uno de los ejemplos que presentaron en su investigación es *metaDESK*. El sistema metaDESK es una plataforma desarrollada en el grupo de Medios Tangibles en el MIT Media Lab para explorar las TUIs. La plataforma permite el uso de gráficos 2D y 3D en una pantalla, y la manipulación de varios objetos físicos detectados por una matriz de sensores ópticos, mecánicos y electromagnéticos.
+
+La investigación de Ishii y Ullmer desencadenó el desarrollo de una serie de nuevos proyectos y más investigaciones relacionadas con esta área. Uno de los proyectos más exitosos que utilizan las TUIs hasta el momento es *reacTable* [^26], una plataforma de edición musical. 
+
+Varios estudios de investigación han afirmado cómo las Interfaces de Usuario Tangibles son beneficiosas para la usabilidad y la interacción natural de un sistema [^27]. No solo mejoran los métodos de interacción humano-computadora, sino que también aumentan los resultados de aprendizaje si se utilizan en un entorno educativo [^28].
+
+#### Programación Tangible
+
+De manera similar a cómo las Interfaces de Usuario Tangibles (TUIs) pueden aumentar el rendimiento en entornos de aprendizaje, existe evidencia de cómo la programación tangible puede ayudar a los usuarios a comprender mejor sus sistemas de programación [^29].
+
+{{<figure class="img-right" src="/img/blog/algoblock.png" title="Grupo de niños usando el sistema AlgoBlock.">}}
+
+La gran mayoría de plataformas que enseñan pensamiento computacional están basadas en pantallas en línea, donde el estudiante se desconecta de su propia realidad física y se aísla de los demás, permaneciendo inmóvil mirando su propio dispositivo. Es por esto que, en paralelo a todo este movimiento de sistemas basados en pantallas en línea, los investigadores han estado reconociendo la importancia de la corporeidad y la manipulación física en las experiencias de aprendizaje. La programación tangible se inspira en estas teorías cognitivas y se han desarrollado diferentes herramientas siguiendo estas líneas de pensamiento. *AlgoBlock* [^30], *Tangible Programming Bricks* [^29] o *CyberPLAYce* [^32], entre muchos otros, son algunos de los innumerables ejemplos de plataformas de programación que utilizan bits físicos para enseñar sobre programación. Si tomamos AlgoBlock como ejemplo, el sistema permite a los estudiantes planificar y construir procedimientos en grupo usando bloques físicos. El niño no programa líneas de código en una pantalla, sino que, en cambio, utiliza bits físicos para diseñar sus programas y secuencias. Luego pueden observar el resultado de sus acciones en una pantalla.
+
+Un enfoque similar es utilizado por sistemas como *Tern* [^33] o *Quetzal* [^34], lenguajes de programación más recientes que hacen uso de los mismos principios. Ambos fueron desarrollados en la Universidad de Tufts por *Michael S. Horn* y se centran en la idea de hacer que las interfaces de programación sean más accesibles para el aula, utilizando materiales simples como el papel para crear entradas de programación en el espacio.
+
+{{<figure class="img-post" src="/img/blog/tern-quetzal.png" title="Sistemas de programación tangible Tern y Quetzal.">}}
+
+Los proyectos mencionados son buenos ejemplos de programación tangible. Las entradas del sistema se disponen en el espacio, aprovechando el entorno físico del usuario. Sin embargo, la salida se visualiza en una pantalla 2D. Esto desvincula las acciones de entrada del usuario de los resultados que el usuario logra. Los bits tangibles que el usuario puede manipular están físicamente desconectados del resultado digital que ocurre en un entorno diferente. Para tener un sistema interactivo y reflexivo que reaccione naturalmente a las acciones del usuario, el contenido digital debería estar vinculado a las fichas físicas y reaccionar a estas de manera instantánea, de modo que el usuario comprenda su funcionalidad automáticamente. Aprender pensamiento computacional con un sistema de programación tangible puede beneficiarse enormemente de la superposición de contenido digital en el espacio.
+
+#### Realidad Aumentada
+
+Con la llegada de la Realidad Virtual (VR) y Realidad Aumentada (AR) y los últimos avances en procesamiento de imágenes y seguimiento espacial, estas nuevas tecnologías establecen un territorio ideal para la experimentación educativa. La AR, en particular, nos permite poner en práctica muchos de los conceptos relacionados con la cognición espacial y el desarrollo cognitivo en el currículo educativo.
+
+Las posibilidades que ofrece la AR nos permiten aprovechar el espacio y fusionar los mundos virtual y físico de una manera que puede beneficiar enormemente las actividades educativas y creativas. Algunos investigadores ya han explorado el uso de la AR como medio para mejorar los enfoques de aprendizaje y creatividad en la educación. Sin embargo, las aplicaciones desarrolladas hasta ahora no aprovechan todo el potencial de esta tecnología. Los nuevos sistemas de seguimiento como ARCore (Google) o ARKit (Apple) y los nuevos dispositivos de visualización montados en la cabeza como Hololens (Microsoft) o Meta 2 (Meta) que han sido lanzados al mercado en los últimos años abren una nueva puerta a la exploración de nuevas metodologías de aprendizaje que involucran el espacio y el entorno físico.
+
+En diferentes intentos de combinar los enfoques digitales basados en pantalla con los tangibles, algunos investigadores han utilizado la AR como un medio flexible que puede potenciar las capacidades de pensamiento espacial en entornos de aprendizaje. *AR Scratch* [^35] es un entorno de autoría para niños para experiencias de realidad aumentada que utiliza el lenguaje de programación Scratch en AR. El sistema permite contenido 2D en una pantalla, haciendo uso de marcadores de imagen frente a la webcam del computador.
+
+Un enfoque similar más enfocado en combinar lo digital con el entorno físico se encuentra en *Color Code* [^36] de *Eric Rosenbaum*. En lugar de marcadores de imagen, Rosenbaum diseñó un conjunto de experimentos que superponen contenido digital dependiendo de códigos de color en el entorno capturado por la webcam.
+
+{{<figure class="img-right" src="/img/blog/dynamicland.png" title="Dynamicland de Bret Victor.">}}
+
+Otro ejemplo del uso de la AR para la educación es *Code Bits* [^37]. Code Bits es un kit de herramientas económico de pensamiento computacional tangible que utiliza patrones planos y AR para enseñar habilidades de programación. El usuario solo necesita papel para crear marcadores de imagen y un smartphone para visualizar el contenido de AR en el espacio. En este caso, los marcadores son planos y necesitan permanecer a la vista para que la aplicación muestre el contenido virtual. El usuario necesita apuntar al tablero en todo momento para que el contenido digital aparezca. La aplicación no tiene conciencia espacial.
+
+Otro sistema que hace uso de AR para el pensamiento computacional en entornos de aprendizaje es *RealTalk* [^38]. RealTalk fue lanzado en 2017 y es *"un entorno para la autoría y uso de medios computacionales con objetos físicos ordinarios - papel, piedras, lo que haya a mano - reconocidos y animados por tecnología instalada en el techo"*. El sistema fue desarrollado por un grupo de investigación liderado por *Bret Victor*. Más tarde, crearon un entorno completo sobre RealTalk, llamado *DynamicLand* [^39], un espacio para la colaboración, programación y experimentación. Bret describió DynamicLand como *"un medio que podemos ver, sentir y manipular"*. DynamicLand es un espacio donde las personas pueden interactuar con objetos y los tokens físicos se fusionan con el contenido digital proyectado desde la tecnología instalada en el techo. El contenido digital 2D se proyecta sobre la superficie de una mesa donde el usuario puede interactuar con él utilizando cualquier tipo de objeto físico. La interacción está limitada a la mesa donde está configurada la tecnología.
+
 
 ### Referencias
 
@@ -201,3 +271,24 @@ Es evidente que el estudiante no solo aprende sobre programación, sino que expl
 [^17]: Klassner, F., & Anderson, S. D. (2003). **Lego MindStorms: Not just for K-12 anymore*. IEEE Robotics & Automation Magazine, 10 (2), pp. 12-18.
 [^18]: Victor, Bret. 2012. **Learnable programming**. Del sitio web de Bret Victor: http://worrydream.com/#!/LearnableProgramming
 [^19]: Kay, Alan. 2011. **A Personal Computer for Children of All Ages**. In Proceedings of the ACM Annual Conference - Volume 1 (ACM ’72).
+[^20]: Ellis, T. 0., Heafner, J. F., & Sibley, W. L. (1969). **The GRAIL Project: An experiment in man-machine communications**. Santa Monica: RAND Corporation.
+[^21]: VVVV group. 1998. De la web de vvvv: https://vvvv.org/
+[^22]: Heun, V., Hobin, J., & Maes, P. (2013). **Reality editor: programming smarter objects**. Adjunct Proceedings of the 2013 ACM conference on Pervasive and ubiquitous computing adjunct publication (pp. 307-310). Zurich, Switzerland: ACM.
+[^23]: Kay, Alan. 1987. **Doing with images makes symbols**. De Internet Archive, parte 1: https://archive.org/details/AlanKeyD1987 parte 2: https://archive.org/details/AlanKeyD1987_2
+[^24]: Victor, Bret. 2011. **Explorable Explanations**. De la página web de Bret Victor: http://worrydream.com/ExplorableExplanations/
+[^25]: Ishii, H., & Ullmer, B. 1997. **Tangible bits: towards seamless interfaces between people, bits and atoms**. Proceedings of the ACM SIGCHI Conference on Human factors in computing systems (pp. 234-241). New York: ACM.
+[^26]: Jordá, S., Geiger, G., Alonso, M., & Kaltenbrunner, M. (2007). **The reacTable: exploring the synergy between live music performance and tabletop tangible interfaces**. Proceedings of the 1st international conference on Tangible and embedded interaction (pp. 139-146). New York: ACM.
+[^27]: Schneider, B., Jermann, P., Zufferey, G., & Dillenbourg, P. (2011). **Benefits of a Tangible Interface for Collaborative Learning and Interaction**. IEEE Transactions on Learning Technologies, 4 (3), 222 - 232
+[^28]: Skulmowski, A., Pradel, S., KOhnert, T., Brunnett, G., & Daniel Rey, G. (2016, January-February). **Embodied learning using a tangible user interface: The effects of haptic perception and selective pointing on a spatial learning task**. Computers & Education, 64-75.
+[^29]: McNerney, T. S. (2000). **Tangible programming bricks: An approach to making programming accessible to everyone**. Massachusetts Institute of Technology, Dept. of Architecture. Program In Media Arts and Sciences. Boston: Massachusetts Institute of Technology.
+[^30]: Hideyuki, S., & Kato, H. 1993. **AlgoBlock: a Tangible Programming Language - a Tool for Collaborative Learning**. Proceedings of 4th European Logo Conference (pp. 297-303). Athens, Greece.
+[^32]: Soleimani, A., Green, K. E., Herro, D., & Walker, I. D. (2016). **A Tangible, Story-Construction Process Employing Spatial, Computational-Thinking**. Proceedings of the The 15th International Conference on Interaction Design and Children (pp. 157-166). Manchester, United Kingdom: ACM.
+[^33]: Horn, M. S., & Jacob, R. J. (2007). **Tangible programming in the classroom with tern**. Extended abstracts on Human factors in computing systems (pp. 1965-1970). New York: ACM.
+[^34]: Horn, M. S. (2006). **Tangible programming with quetzal: Opportunities for education**. Boston: Tufts University.
+[^35]: Radu, I., & MacIntyre, B. (2009). **Augmented-reality scratch: a children's authoring environment for augmented-reality experiences**. Proceedings of the 8th International Conference on Interaction Design and Children (pp. 210-213). Como, Italy: ACM.
+[^36]: Rosenbaum, E. (2010). **Color Code**. De la página web: https://www.ericrosenbaum.com/color-code/
+[^37]: Goyal, S., Vijay, R. S., Monga, C., & Pratul, K. (2016). **Code Bits: An Inexpensive Tangible Computational Thinking Toolkit For K-12 Curriculum**. Proceedings of the TEI '16: Tenth International Conference on Tangible, Embedded, and Embodied Interaction (pp. 441-447). Eindhoven, Netherlands: ACM.
+[^38]: Victor, B., Schachman, T., Te, P., Horowitz, J., & lannini, L. (2016). **Realtalk**. De la web del Human Advancement Research Community: https://harc.ycr.org/project/realtalk/
+[^39]: Victor, B. 2017. **DynamicLand**. Página web de DynamicLand: https://dynamicland.org
+
+
