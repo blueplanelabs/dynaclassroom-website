@@ -81,7 +81,14 @@
         font-size: .8em;
     }
 }
-.blog-detail-page{
+.blog-detail-page{ 
+    section:first-of-type{
+        padding-top: $_padding;
+        max-width: 50em;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'genium-basic', 'Times New Roman', Times, serif;
+    }
     .post-header{
         background-color: $_colorCorporativo1-dark;
         display: grid;
@@ -133,11 +140,21 @@
     .img-post{
         border-radius: $_borderRadius;
         background-color: $_colorBlanco;
-        box-shadow: 0px 0px 5px 5px rgba(56, 41, 4, 0.1);
-        width: 100svw;
-        max-width: 850px;
+        // box-shadow: 0px 0px 5px 5px rgba(56, 41, 4, 0.1);
+        width: 100%;
+        @include respond-to-device(slg, false) {
+            max-width: 45svw;
+        }
         display: block;
         margin: 3vw auto;
+    }
+    .img-left{
+        float: left;
+        margin: 0 $_padding $_padding 0;
+    }
+    .img-right{
+        float: right;
+        margin: 0 0 $_padding $_padding;
     }
     .post-title{
         display: flex;
@@ -170,6 +187,31 @@
         }
         .post-year{
             font-size: 1.2em;
+        }
+    }
+    figure{
+        img{
+            border-radius: $_borderRadius;
+            border: 1em solid $_colorBlanco;
+            box-shadow: 0px 0px 15px 15px rgba(56, 41, 4, 0.10);
+            transform: rotate(2deg);
+            margin: $_padding 0;
+        }
+        text-align: center;
+        figcaption,
+        figcaption h4{
+            font-size: .9em;
+            color: $_colorFilete;
+            font-weight: normal;
+            margin-bottom: 1em;
+            font-style: italic;
+        }
+        &.img-noDeco img{
+            border-radius: initial;
+            border: initial;
+            box-shadow: initial;
+            transform: rotate(0deg);
+            margin: 1em;
         }
     }
 }
@@ -244,6 +286,7 @@
             }
         }
         > .posts-author a{color: $_colorBlanco;}
+        
     }
 }
 .icon-back{
