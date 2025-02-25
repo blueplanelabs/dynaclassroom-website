@@ -129,7 +129,8 @@
         }
         ul{
             display: flex;
-            gap: .5em;
+            flex-wrap: wrap;
+            gap: 0 .5em;
         }
     }
     .post-author{
@@ -155,13 +156,17 @@
         display: block;
         margin: 3vw auto;
     }
-    .img-left{
-        float: left;
-        margin: 0 $_padding $_padding 0;
-    }
-    .img-right{
-        float: right;
-        margin: 0 0 $_padding $_padding;
+    @include respond-to-device(slg, false) {
+        .img-left{
+            float: left;
+            margin: 0 $_padding $_padding 0;
+            max-width: 50%;
+        }
+        .img-right{
+            float: right;
+            margin: 0 0 $_padding $_padding;
+            max-width: 50%;
+        }
     }
     .post-title{
         display: flex;

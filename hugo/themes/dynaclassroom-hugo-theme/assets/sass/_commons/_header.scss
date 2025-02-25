@@ -81,7 +81,7 @@
 				margin:0 0 0 $_margin;
 				@include respond-to-device(false, slg) {
 					margin: $_margin 0 0 0;
-					&:last-child { padding-top: $_padding; }
+					// &:last-child { padding-top: $_padding; }
 				}
 			}
 			a{
