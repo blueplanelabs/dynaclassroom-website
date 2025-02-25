@@ -24,7 +24,5 @@
 <title>{{ printf "%s | %s" site.Title .Title }}</title>
 
 {{ partialCached "head/css.html" . }}
-{{ if .IsHome }}
-  {{ partialCached "head/js.html" . }}
-{{ end }}
+{{ partialCached "head/js.html" . }}
 {{ partialCached "head/gtm.html" . }}
